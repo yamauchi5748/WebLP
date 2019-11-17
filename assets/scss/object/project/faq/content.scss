@@ -1,4 +1,5 @@
 /** コンテンツレイアウト **/
+@import "../../../foundation/_variables";
 
 .faq {
   .p-content {
@@ -32,7 +33,7 @@
 
     &__item input:checked ~ div {
       margin-top: 7px;
-      padding: 22px 40px 30px;
+      padding: 22px 15px 30px 30px;
     }
 
     &__item input:checked + label > span {

@@ -1,0 +1,24 @@
+/** 引っ越し **/
+
+.faq {
+    .p-moving {
+      counter-reset: number;
+      &__title {
+        padding: 126px 0 68px;
+        background-image: url(https://placehold.jp/37ff14/ffffff/265x245.png?text=%E4%BA%BA%E7%89%A9);
+        background-position: right 15px bottom;
+      }
+  
+      &__title__text {
+        width: 540px;
+        padding: 66px 0 41px;
+        background-image: url(https://placehold.jp/ffff14/ffffff/540x200.png);
+      }
+  
+      &__caption__text::before {
+        counter-increment: number;
+        content: "Q" counter(number) ". ";
+      }
+    }
+  }
+  

@@ -1,0 +1,121 @@
+.l-footer {
+  &__diagnosis {
+    margin-top: 70px;
+    background-image: url(https://placehold.jp/00ffcc/ffffff/1366x750.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    &__contents {
+      display: flex;
+      padding-bottom: 134px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__title {
+      width: 790px;
+      margin: 0;
+      padding: 83px 0 63px;
+      text-align: center;
+      line-height: 1.3;
+      background-image: url(https://placehold.jp/ffff00/ffffff/370x200.png);
+    }
+
+    &__caption-wrapper {
+      position: relative;
+    }
+
+    &__caption__img {
+      position: absolute;
+      top: 15px;
+      left: -15px;
+    }
+
+    &__caption-inner {
+      display: flex;
+      margin-top: 44px;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    &__caption__text {
+      margin: 0;
+      padding-right: 20px;
+      font-size: 25px;
+      font-weight: 400;
+      line-height: 1.2;
+      background-image: url(https://placehold.jp/00ff00/ffffff/570x50.png);
+      background-size: cover;
+    }
+
+    .--emphasis {
+      padding: 7px 34px 0 30px;
+      font-size: 30px;
+      font-weight: bold;
+      background-image: url(https://placehold.jp/00ff00/ffffff/346x50.png);
+    }
+
+    &__inner {
+      position: relative;
+      width: 750px;
+      margin-top: 50px;
+      background: blue;
+      text-align: center;
+    }
+
+    &__inner__title {
+      margin-top: 50px;
+      margin-bottom: 15px;
+      font-size: 38px;
+      color: $main-blue;
+    }
+
+    &__inner__text {
+      margin: 0;
+      margin-bottom: 47px;
+      font-size: 20px;
+      font-weight: bold;
+    }
+
+    &__inner__icon {
+      position: absolute;
+      right: 25px;
+      top: 70px;
+      width: 50px;
+      height: 50px;
+      border-radius: 50%;
+      background-color: #000;
+
+      &::before {
+        @include arrow($width: 9, $bold: 2.5, $color: #fff, $deg: "right");
+        right: 15px;
+        top: 21px;
+      }
+
+      &::after {
+        content: "";
+        position: absolute;
+        left: 16px;
+        top: 24px;
+        width: 18px;
+        border-bottom: 2.5px solid #fff;
+      }
+    }
+
+    &__top {
+      position: absolute;
+      right: 0;
+      bottom: 110px;
+    }
+  }
+
+  &__copyright {
+    background-color: rgb(29, 32, 137);
+  }
+
+  &__copyright-contents {
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+  }
+}

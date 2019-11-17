@@ -1,0 +1,7 @@
+@charset "UTF-8";
+/** お部屋探し **/
+.faq .p-room__title__text {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 auto; }

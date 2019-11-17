@@ -1,0 +1,92 @@
+/** コンテンツレイアウト **/
+
+.faq {
+  .p-content {
+    &__title {
+      background-repeat: no-repeat;
+    }
+
+    &__title__text {
+      margin: 0 auto;
+      text-align: center;
+      background-size:cover;
+      background-repeat: no-repeat;
+    }
+
+    &__item {
+      width: 100%;
+      max-width: unset;
+      margin: 27px 0;
+      padding: 4px;
+      color: #fff;
+      background-color: $main-blue;
+    }
+
+    &__item.--first {
+      margin-top: 0;
+    }
+
+    &__item.--last {
+      margin-bottom: 0;
+    }
+
+    &__item input:checked ~ div {
+      margin-top: 7px;
+      padding: 22px 40px 30px;
+    }
+
+    &__item input:checked + label > span {
+      border-top: none;
+      border-bottom: 15px solid #ffffff;
+    }
+
+    &__caption {
+      display: flex;
+      align-items: center;
+      margin: 0;
+      background-color: $main-blue;
+    }
+
+    &__caption__text {
+      width: 100%;
+      margin: 10px 0;
+    }
+
+    &__arrow {
+      width: 0;
+      height: 0;
+      border-right: 10px solid transparent;
+      border-left: 10px solid transparent;
+      border-top: 15px solid #fff;
+    }
+
+    &__contents-wrapper {
+      display: flex;
+      background-color: #fff;
+    }
+
+    &__contents {
+      margin-left: 20px;
+      padding-top: 8px;
+    }
+
+    &__contents-inner {
+      margin-bottom: 15px;
+    }
+
+    &__contents__text {
+      display: block;
+      color: #000;
+    }
+
+    &__contents__text.--title {
+      color: $main-blue;
+      font-weight: bold;
+      font-size: 20px;
+    }
+
+    &__contents__shedule img {
+      height: 165px;
+    }
+  }
+}

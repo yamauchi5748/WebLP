@@ -1,0 +1,67 @@
+body {
+	font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+	line-height: 1.8;
+}
+
+@include deviceSP {
+	body {
+		line-height: 1.5;
+		min-width: 1%;
+		overflow-x: hidden;
+		position: relative;
+	}
+}
+
+/* mouseover
+--------------------------------------------------*/
+@include devicePC {
+	.over {
+		&:hover {
+			opacity: 0.6;
+			transition: opacity 0.3s;
+		}
+	}
+}
+
+/* link
+--------------------------------------------------*/
+a {
+	color: #0851d7;
+	transition: all 0.4s;
+	&:link,
+	&:active,
+	&:visited {
+		text-decoration: none;
+	}
+	&:hover,
+	&:focus {
+		text-decoration: underline;
+		transition: all 0.4s;
+	}
+}
+
+body {
+	width: 100vw;
+	min-width: 1366px;
+	line-height: 1.7;
+	font-family: Noto Sans CJK JP;
+	overflow: auto;
+}
+
+h1,h2 {
+	font-size: 35px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+h3 {
+	font-size: 30px;
+	font-weight: bold;
+	line-height: 1.4;
+}
+
+ul,ol {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}

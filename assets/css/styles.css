@@ -1,0 +1,1069 @@
+@charset "UTF-8";
+/* Sanitize
+ * ========================================================================== */
+/**
+ * Add border box sizing in all browsers (opinionated).
+ */
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+/**
+ * 1. Add text decoration inheritance in all browsers (opinionated).
+ * 2. Add vertical alignment inheritance in all browsers (opinionated).
+ */
+::before,
+::after {
+  text-decoration: inherit;
+  /* 1 */
+  vertical-align: inherit;
+  /* 2 */ }
+
+/**
+ * 1. Use the default cursor in all browsers (opinionated).
+ * 2. Change the line height in all browsers (opinionated).
+ * 3. Use a 4-space tab width in all browsers (opinionated).
+ * 4. Remove the grey highlight on links in iOS (opinionated).
+ * 5. Prevent adjustments of font size after orientation changes in
+ *		IE on Windows Phone and in iOS.
+ * 6. Breaks words to prevent overflow in all browsers (opinionated).
+ */
+html {
+  cursor: default;
+  /* 1 */
+  line-height: 1.5;
+  /* 2 */
+  -moz-tab-size: 4;
+  /* 3 */
+  -o-tab-size: 4;
+  tab-size: 4;
+  /* 3 */
+  -webkit-tap-highlight-color: transparent;
+  /* 4 */
+  -ms-text-size-adjust: 100%;
+  /* 5 */
+  -webkit-text-size-adjust: 100%;
+  /* 5 */
+  word-break: break-word;
+  /* 6 */ }
+
+/* Sections
+ * ========================================================================== */
+/**
+ * Remove the margin in all browsers (opinionated).
+ */
+body {
+  margin: 0; }
+
+/**
+ * Correct the font size and margin on `h1` elements within `section` and
+ * `article` contexts in Chrome, Edge, Firefox, and Safari.
+ */
+h1 {
+  font-size: 2em;
+  margin: 0.67em 0; }
+
+/* Grouping content
+ * ========================================================================== */
+/**
+ * Remove the margin on nested lists in Chrome, Edge, IE, and Safari.
+ */
+dl dl,
+dl ol,
+dl ul,
+ol dl,
+ul dl {
+  margin: 0; }
+
+/**
+ * Remove the margin on nested lists in Edge 18- and IE.
+ */
+ol ol,
+ol ul,
+ul ol,
+ul ul {
+  margin: 0; }
+
+/**
+ * 1. Add the correct sizing in Firefox.
+ * 2. Show the overflow in Edge 18- and IE.
+ */
+hr {
+  height: 0;
+  /* 1 */
+  overflow: visible;
+  /* 2 */ }
+
+/**
+ * Add the correct display in IE.
+ */
+main {
+  display: block; }
+
+/**
+ * Remove the list style on navigation lists in all browsers (opinionated).
+ */
+nav ol,
+nav ul {
+  list-style: none;
+  padding: 0; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+pre {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/* Text-level semantics
+ * ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent; }
+
+/**
+ * Add the correct text decoration in Edge 18-, IE, and Safari.
+ */
+abbr[title] {
+  text-decoration: underline;
+  -webkit-text-decoration: underline dotted;
+  text-decoration: underline dotted; }
+
+/**
+ * Add the correct font weight in Chrome, Edge, and Safari.
+ */
+b,
+strong {
+  font-weight: bolder; }
+
+/**
+ * 1. Correct the inheritance and scaling of font size in all browsers.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+samp {
+  font-family: monospace, monospace;
+  /* 1 */
+  font-size: 1em;
+  /* 2 */ }
+
+/**
+ * Add the correct font size in all browsers.
+ */
+small {
+  font-size: 80%; }
+
+/* Embedded content
+ * ========================================================================== */
+/*
+ * Change the alignment on media elements in all browsers (opinionated).
+ */
+img {
+  max-width: 100%;
+  height: auto; }
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: top; }
+
+/**
+ * Add the correct display in IE 9-.
+ */
+audio,
+video {
+  display: inline-block; }
+
+/**
+ * Add the correct display in iOS 4-7.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0; }
+
+/**
+ * Remove the border on iframes in all browsers (opinionated).
+ */
+iframe {
+  border-style: none; }
+
+/**
+ * Remove the border on images within links in IE 10-.
+ */
+img {
+  border-style: none; }
+
+/**
+ * Change the fill color to match the text color in all browsers (opinionated).
+ */
+svg:not([fill]) {
+  fill: currentColor; }
+
+/**
+ * Hide the overflow in IE.
+ */
+svg:not(:root) {
+  overflow: hidden; }
+
+/* Tabular data
+ * ========================================================================== */
+/**
+ * Collapse border spacing in all browsers (opinionated).
+ */
+table {
+  border-collapse: collapse; }
+
+/* Forms
+ * ========================================================================== */
+/**
+ * Remove the margin on controls in Safari.
+ */
+button,
+input,
+select {
+  margin: 0; }
+
+/**
+ * 1. Show the overflow in IE.
+ * 2. Remove the inheritance of text transform in Edge 18-, Firefox, and IE.
+ */
+button {
+  overflow: visible;
+  /* 1 */
+  text-transform: none;
+  /* 2 */ }
+
+/**
+ * Correct the inability to style buttons in iOS and Safari.
+ */
+button,
+[type="button"],
+[type="reset"],
+[type="submit"] {
+  -webkit-appearance: button; }
+
+/**
+ * 1. Change the inconsistent appearance in all browsers (opinionated).
+ * 2. Correct the padding in Firefox.
+ */
+fieldset {
+  border: 1px solid #a0a0a0;
+  /* 1 */
+  padding: 0.35em 0.75em 0.625em;
+  /* 2 */ }
+
+/**
+ * Show the overflow in Edge 18- and IE.
+ */
+input {
+  overflow: visible; }
+
+/**
+ * 1. Correct the text wrapping in Edge 18- and IE.
+ * 2. Correct the color inheritance from `fieldset` elements in IE.
+ */
+legend {
+  display: table;
+  /* 1 */
+  max-width: 100%;
+  /* 1 */
+  white-space: normal;
+  /* 1 */
+  color: inherit;
+  /* 2 */ }
+
+/**
+ * 1. Add the correct display in Edge 18- and IE.
+ * 2. Add the correct vertical alignment in Chrome, Edge, and Firefox.
+ */
+progress {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */ }
+
+/**
+ * Remove the inheritance of text transform in Firefox.
+ */
+select {
+  text-transform: none; }
+
+/**
+ * 1. Remove the margin in Firefox and Safari.
+ * 2. Remove the default vertical scrollbar in IE.
+ * 3. Change the resize direction in all browsers (opinionated).
+ */
+textarea {
+  margin: 0;
+  /* 1 */
+  overflow: auto;
+  /* 2 */
+  resize: vertical;
+  /* 3 */ }
+
+/**
+ * Remove the padding in IE 10-.
+ */
+[type="checkbox"],
+[type="radio"] {
+  padding: 0; }
+
+/**
+ * 1. Correct the odd appearance in Chrome, Edge, and Safari.
+ * 2. Correct the outline style in Safari.
+ */
+[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  outline-offset: -2px;
+  /* 2 */ }
+
+/**
+ * Correct the cursor style of increment and decrement buttons in Safari.
+ */
+::-webkit-inner-spin-button,
+::-webkit-outer-spin-button {
+  height: auto; }
+
+/**
+ * Correct the text style of placeholders in Chrome, Edge, and Safari.
+ */
+::-webkit-input-placeholder {
+  color: inherit;
+  opacity: 0.54; }
+
+/**
+ * Remove the inner padding in Chrome, Edge, and Safari on macOS.
+ */
+::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style upload buttons in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  -webkit-appearance: button;
+  /* 1 */
+  font: inherit;
+  /* 2 */ }
+
+/**
+ * Remove the inner border and padding of focus outlines in Firefox.
+ */
+::-moz-focus-inner {
+  border-style: none;
+  padding: 0; }
+
+/**
+ * Restore the focus outline styles unset by the previous rule in Firefox.
+ */
+:-moz-focusring {
+  outline: 1px dotted ButtonText; }
+
+/**
+ * Remove the additional :invalid styles in Firefox.
+ */
+:-moz-ui-invalid {
+  box-shadow: none; }
+
+/* Interactive
+ * ========================================================================== */
+/*
+ * Add the correct display in Edge 18- and IE.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct styles in Edge 18-, IE, and Safari.
+ */
+dialog {
+  background-color: white;
+  border: solid;
+  color: black;
+  display: block;
+  height: -moz-fit-content;
+  height: -webkit-fit-content;
+  height: fit-content;
+  left: 0;
+  margin: auto;
+  padding: 1em;
+  position: absolute;
+  right: 0;
+  width: -moz-fit-content;
+  width: -webkit-fit-content;
+  width: fit-content; }
+
+dialog:not([open]) {
+  display: none; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Scripting
+ * ========================================================================== */
+/**
+ * Add the correct display in IE 9-.
+ */
+canvas {
+  display: inline-block; }
+
+/**
+ * Add the correct display in IE.
+ */
+template {
+  display: none; }
+
+/* User interaction
+ * ========================================================================== */
+/*
+ * 1. Remove the tapping delay in IE 10.
+ * 2. Remove the tapping delay on clickable elements
+			in all browsers (opinionated).
+ */
+a,
+area,
+button,
+input,
+label,
+select,
+summary,
+textarea,
+[tabindex] {
+  -ms-touch-action: manipulation;
+  /* 1 */
+  touch-action: manipulation;
+  /* 2 */ }
+
+/**
+ * Add the correct display in IE 10-.
+ */
+[hidden] {
+  display: none; }
+
+/* Accessibility
+ * ========================================================================== */
+/**
+ * Change the cursor on busy elements in all browsers (opinionated).
+ */
+[aria-busy="true"] {
+  cursor: progress; }
+
+/*
+ * Change the cursor on control elements in all browsers (opinionated).
+ */
+[aria-controls] {
+  cursor: pointer; }
+
+/*
+ * Change the cursor on disabled, not-editable, or otherwise
+ * inoperable elements in all browsers (opinionated).
+ */
+[aria-disabled="true"],
+[disabled] {
+  cursor: not-allowed; }
+
+/*
+ * Change the display on visually hidden accessible elements
+ * in all browsers (opinionated).
+ */
+[aria-hidden="false"][hidden] {
+  display: initial; }
+
+[aria-hidden="false"][hidden]:not(:focus) {
+  clip: rect(0, 0, 0, 0);
+  position: absolute; }
+
+/**
+ * Add
+ */
+dl dd {
+  margin-left: 0; }
+
+figure {
+  margin: 0; }
+
+table {
+  table-layout: fixed; }
+
+menu {
+  padding: 0; }
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.8; }
+
+@media screen and (max-width: 767px) {
+  body {
+    line-height: 1.5;
+    min-width: 1%;
+    overflow-x: hidden;
+    position: relative; } }
+
+/* mouseover
+--------------------------------------------------*/
+@media screen and (min-width: 768px) {
+  .over:hover {
+    opacity: 0.6;
+    -webkit-transition: opacity 0.3s;
+    -o-transition: opacity 0.3s;
+    transition: opacity 0.3s; } }
+
+/* link
+--------------------------------------------------*/
+a {
+  color: #0851d7;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  transition: all 0.4s; }
+  a:link, a:active, a:visited {
+    text-decoration: none; }
+  a:hover, a:focus {
+    text-decoration: underline;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s; }
+
+body {
+  width: 100vw;
+  min-width: 1366px;
+  line-height: 1.7;
+  font-family: Noto Sans CJK JP;
+  overflow: auto; }
+
+h1, h2 {
+  font-size: 35px;
+  font-weight: bold;
+  line-height: 1.4; }
+
+h3 {
+  font-size: 30px;
+  font-weight: bold;
+  line-height: 1.4; }
+
+ul, ol {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+.l-footer__diagnosis {
+  margin-top: 70px;
+  background-image: url(https://placehold.jp/00ffcc/ffffff/1366x750.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .l-footer__diagnosis__contents {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding-bottom: 134px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .l-footer__diagnosis__title {
+    width: 790px;
+    margin: 0;
+    padding: 83px 0 63px;
+    text-align: center;
+    line-height: 1.3;
+    background-image: url(https://placehold.jp/ffff00/ffffff/370x200.png); }
+  .l-footer__diagnosis__caption-wrapper {
+    position: relative; }
+  .l-footer__diagnosis__caption__img {
+    position: absolute;
+    top: 15px;
+    left: -15px; }
+  .l-footer__diagnosis__caption-inner {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 44px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .l-footer__diagnosis__caption__text {
+    margin: 0;
+    padding-right: 20px;
+    font-size: 25px;
+    font-weight: 400;
+    line-height: 1.2;
+    background-image: url(https://placehold.jp/00ff00/ffffff/570x50.png);
+    background-size: cover; }
+  .l-footer__diagnosis .--emphasis {
+    padding: 7px 34px 0 30px;
+    font-size: 30px;
+    font-weight: bold;
+    background-image: url(https://placehold.jp/00ff00/ffffff/346x50.png); }
+  .l-footer__diagnosis__inner {
+    position: relative;
+    width: 750px;
+    margin-top: 50px;
+    background: blue;
+    text-align: center; }
+  .l-footer__diagnosis__inner__title {
+    margin-top: 50px;
+    margin-bottom: 15px;
+    font-size: 38px;
+    color: #45c5ea; }
+  .l-footer__diagnosis__inner__text {
+    margin: 0;
+    margin-bottom: 47px;
+    font-size: 20px;
+    font-weight: bold; }
+  .l-footer__diagnosis__inner__icon {
+    position: absolute;
+    right: 25px;
+    top: 70px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    background-color: #000; }
+    .l-footer__diagnosis__inner__icon::before {
+      border-style: solid;
+      border-width: 0 2.5px 2.5px 0;
+      content: "";
+      display: inline-block;
+      position: absolute;
+      height: 9px;
+      width: 9px;
+      border-color: #fff;
+      -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+      transform: rotate(-45deg);
+      right: 15px;
+      top: 21px; }
+      @media screen and (max-width: 767px) {
+        .l-footer__diagnosis__inner__icon::before {
+          height: 4.5px;
+          width: 4.5px; } }
+    .l-footer__diagnosis__inner__icon::after {
+      content: "";
+      position: absolute;
+      left: 16px;
+      top: 24px;
+      width: 18px;
+      border-bottom: 2.5px solid #fff; }
+  .l-footer__diagnosis__top {
+    position: absolute;
+    right: 0;
+    bottom: 110px; }
+
+.l-footer__copyright {
+  background-color: #1d2089; }
+
+.l-footer__copyright-contents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  color: #fff; }
+
+.l-content {
+  position: relative;
+  height: 100%;
+  width: 1100px;
+  margin: 0 auto; }
+
+.c-aspectRatio {
+  position: relative;
+  width: 100%; }
+  .c-aspectRatio__inside {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; }
+
+.c-circle::before, .c-circle::after {
+  content: "";
+  display: inline-block;
+  background-color: #000;
+  height: 30px;
+  width: 30px;
+  margin-right: 3px;
+  border-radius: 50%;
+  vertical-align: middle;
+  position: relative;
+  top: -2px; }
+
+.c-navigation-icon {
+  position: relative;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #000; }
+  .c-navigation-icon::before {
+    border-style: solid;
+    border-width: 0 2px 2px 0;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    height: 6px;
+    width: 6px;
+    border-color: #fff;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+    left: 8px;
+    bottom: 6px; }
+    @media screen and (max-width: 767px) {
+      .c-navigation-icon::before {
+        height: 3px;
+        width: 3px; } }
+  .c-navigation-icon::after {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 6px;
+    height: 11px;
+    border-right: 2px solid #fff; }
+
+.c-accordion {
+  margin: 2em 0;
+  padding: 0;
+  max-width: 400px; }
+  .c-accordion label {
+    display: block;
+    margin: 1.5px 0;
+    padding: 5px 25px;
+    color: #fff;
+    font-weight: bold;
+    background: #a4cbf3;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .c-accordion label:hover {
+      opacity: 0.7; }
+  .c-accordion input {
+    display: none; }
+  .c-accordion__accshow {
+    height: 0;
+    padding: 0;
+    overflow: hidden;
+    opacity: 0;
+    -webkit-transition: 0.8s;
+    -o-transition: 0.8s;
+    transition: 0.8s; }
+  .c-accordion__cssacc:checked ~ .c-accordion__accshow {
+    height: auto;
+    opacity: 1; }
+
+/* --------------------------------------------------
+  display
+-------------------------------------------------- */
+@media screen and (max-width: 767px) {
+  .u-pc {
+    display: none; } }
+
+@media screen and (min-width: 768px) {
+  .u-sp {
+    display: none; } }
+
+/* --------------------------------------------------
+  cleafix
+-------------------------------------------------- */
+.u-clearfix:after {
+  display: block;
+  clear: both;
+  content: ""; }
+
+/* --------------------------------------------------
+  align
+-------------------------------------------------- */
+.u-alignL {
+  text-align: left; }
+
+.u-alignC {
+  text-align: center; }
+
+.u-alignR {
+  text-align: right; }
+
+/* --------------------------------------------------
+  margin
+-------------------------------------------------- */
+.u-margin.-short {
+  margin-bottom: 16px; }
+
+.u-margin.-middle {
+  margin-bottom: 32px; }
+
+.u-margin.-large {
+  margin-bottom: 64px; }
+
+/* --------------------------------------------------
+  padding
+-------------------------------------------------- */
+.-ratio16-9 {
+  padding-top: 56.25%; }
+
+.-ratio4-3 {
+  padding-top: 75%; }
+
+/* --------------------------------------------------
+  underline
+-------------------------------------------------- */
+.u-underline {
+  text-decoration: underline; }
+
+.global {
+  height: 80px;
+  background-color: red; }
+
+/*** FAQ ***/
+/** コンテンツレイアウト **/
+.faq .p-content__title {
+  background-repeat: no-repeat; }
+
+.faq .p-content__title__text {
+  margin: 0 auto;
+  text-align: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
+
+.faq .p-content__item {
+  width: 100%;
+  max-width: unset;
+  margin: 27px 0;
+  padding: 4px;
+  color: #fff;
+  background-color: #45c5ea; }
+
+.faq .p-content__item.--first {
+  margin-top: 0; }
+
+.faq .p-content__item.--last {
+  margin-bottom: 0; }
+
+.faq .p-content__item input:checked ~ div {
+  margin-top: 7px;
+  padding: 22px 40px 30px; }
+
+.faq .p-content__item input:checked + label > span {
+  border-top: none;
+  border-bottom: 15px solid #ffffff; }
+
+.faq .p-content__caption {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  margin: 0;
+  background-color: #45c5ea; }
+
+.faq .p-content__caption__text {
+  width: 100%;
+  margin: 10px 0; }
+
+.faq .p-content__arrow {
+  width: 0;
+  height: 0;
+  border-right: 10px solid transparent;
+  border-left: 10px solid transparent;
+  border-top: 15px solid #fff; }
+
+.faq .p-content__contents-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #fff; }
+
+.faq .p-content__contents {
+  margin-left: 20px;
+  padding-top: 8px; }
+
+.faq .p-content__contents-inner {
+  margin-bottom: 15px; }
+
+.faq .p-content__contents__text {
+  display: block;
+  color: #000; }
+
+.faq .p-content__contents__text.--title {
+  color: #45c5ea;
+  font-weight: bold;
+  font-size: 20px; }
+
+.faq .p-content__contents__shedule img {
+  height: 165px; }
+
+/** バナー **/
+.faq .p-banner {
+  height: 361px;
+  background-image: url(https://placehold.jp/1366x361.png);
+  background-size: cover;
+  background-repeat: no-repeat; }
+  .faq .p-banner__content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .faq .p-banner__inner {
+    text-align: center;
+    padding-top: 66px; }
+  .faq .p-banner__title {
+    padding: 10px 0 19px;
+    background-image: url(https://placehold.jp/e8e83f/ffffff/1100x260.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .faq .p-banner__text-wrapper {
+    padding-bottom: 12px; }
+  .faq .p-banner__text {
+    display: block; }
+  .faq .p-banner__pankuzu-wrapper {
+    width: 100vw;
+    min-width: 1366px;
+    height: 88px;
+    background-image: url(https://placehold.jp/3d4070/ffffff/1366x88.png);
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .faq .p-banner__pankuzu {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-top: 10px;
+    -webkit-box-pack: end;
+    -ms-flex-pack: end;
+    justify-content: flex-end;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    color: #fff;
+    font-size: 16px; }
+  .faq .p-banner__pankuzu__text {
+    padding-right: 3px; }
+
+/** ナビゲーション **/
+.faq .p-navigation {
+  background-color: #fffbcc; }
+  .faq .p-navigation__list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .faq .p-navigation__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 25%;
+    margin: 22px 0 30px;
+    margin-right: 20px;
+    padding: 9px 0;
+    background-color: #fff;
+    -webkit-box-shadow: 4px 4px #45c5ea;
+    box-shadow: 4px 4px #45c5ea;
+    cursor: pointer;
+    -webkit-transition: all 0.5s;
+    -o-transition: all 0.5s;
+    transition: all 0.5s; }
+    .faq .p-navigation__item:nth-child(4) {
+      margin-right: 0; }
+    .faq .p-navigation__item:hover {
+      opacity: 0.5; }
+  .faq .p-navigation__text {
+    width: 100%;
+    text-align: center;
+    font-weight: bold; }
+  .faq .p-navigation__icon {
+    width: 26px;
+    height: 23px;
+    margin-right: 10px; }
+
+/** お部屋探し **/
+.faq .p-room {
+  counter-reset: number; }
+  .faq .p-room__title {
+    padding: 95px 0 68px;
+    background-image: url(https://placehold.jp/4cdb58/ffffff/250x260.png?text=%E4%BA%BA%E7%89%A9);
+    background-position: right 40px bottom; }
+  .faq .p-room__title__text {
+    width: 410px;
+    padding: 66px 0 41px;
+    background-image: url(https://placehold.jp/3d4070/ffffff/400x200.png); }
+  .faq .p-room__caption__text::before {
+    counter-increment: number;
+    content: "Q" counter(number) ". "; }
+
+/** お申込み **/
+.faq .p-contact {
+  counter-reset: number; }
+  .faq .p-contact__title {
+    padding: 155px 0 67px;
+    background-image: url(https://placehold.jp/07db00/ffffff/175x255.png?text=%E4%BA%BA%E7%89%A9);
+    background-position: left 20px bottom; }
+  .faq .p-contact__title__text {
+    width: 610px;
+    padding: 66px 0 41px;
+    background-image: url(https://placehold.jp/ffff00/ffffff/610x200.png); }
+  .faq .p-contact__caption__text::before {
+    counter-increment: number;
+    content: "Q" counter(number) ". "; }
+
+/** 引っ越し **/
+.faq .p-moving {
+  counter-reset: number; }
+  .faq .p-moving__title {
+    padding: 126px 0 68px;
+    background-image: url(https://placehold.jp/37ff14/ffffff/265x245.png?text=%E4%BA%BA%E7%89%A9);
+    background-position: right 15px bottom; }
+  .faq .p-moving__title__text {
+    width: 540px;
+    padding: 66px 0 41px;
+    background-image: url(https://placehold.jp/ffff14/ffffff/540x200.png); }
+  .faq .p-moving__caption__text::before {
+    counter-increment: number;
+    content: "Q" counter(number) ". "; }
+
+/** 引っ越し **/
+.faq .p-other {
+  counter-reset: number; }
+  .faq .p-other__title {
+    padding: 135px 0 70px;
+    background-image: url(https://placehold.jp/37ff14/ffffff/270x240.png?text=%E4%BA%BA%E7%89%A9);
+    background-position: right 15px bottom; }
+  .faq .p-other__title__text {
+    width: 370px;
+    padding: 66px 0 41px;
+    background-image: url(https://placehold.jp/ffff00/ffffff/370x200.png); }
+  .faq .p-other__caption__text::before {
+    counter-increment: number;
+    content: "Q" counter(number) ". "; }

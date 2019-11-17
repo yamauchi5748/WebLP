@@ -1,0 +1,24 @@
+/** お部屋探し **/
+
+.faq {
+  .p-room {
+    counter-reset: number;
+    
+    &__title {
+      padding: 95px 0 68px;
+      background-image: url(https://placehold.jp/4cdb58/ffffff/250x260.png?text=%E4%BA%BA%E7%89%A9);
+      background-position: right 40px bottom;
+    }
+
+    &__title__text {
+      width: 410px;
+      padding: 66px 0 41px;
+      background-image: url(https://placehold.jp/3d4070/ffffff/400x200.png);
+    }
+
+    &__caption__text::before {
+      counter-increment: number;
+      content: "Q" counter(number) ". ";
+    }
+  }
+}

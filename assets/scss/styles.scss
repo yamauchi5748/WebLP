@@ -1,0 +1,44 @@
+@charset "utf-8";
+
+// ==========================================================================
+// Foundation
+// Reset.cssやNormalize.cssなどのリセット系CSS及び、要素セレクタの基本スタイルを定義します。
+// ==========================================================================
+@import "foundation/sanitize";
+@import "foundation/_mixin";
+@import "foundation/_variables";
+@import "foundation/_base";
+
+// ==========================================================================
+// Layout
+// ヘッダー、フッター、サイドバー、メインエリアのように、サイトで共通したコンテナーを定義します。
+// ==========================================================================
+@import "layout/header";
+@import "layout/footer";
+// @import "layout/sidebar";
+@import "layout/content";
+
+// ==========================================================================
+// Object
+// Webサイトの中で用いられるすべてのビジュアルパターンを総称して定義します。
+// -----------------------------------------------------------------
+// Component
+// ページを最低限の機能単位で分割したモジュールのスタイルを定義します。
+// Project
+// プロジェクト固有のパターンを定義する。Componentとそれに該当しないものによって構成されるもの
+// Utility
+// ComponentとProjectレイヤーのObjectのモディファイアで解決することが難しい・適切では無い、
+// わずかなスタイルの調整のための便利クラスなどを定義します。
+// ==========================================================================
+@import "object/component";
+@import "object/utility";
+@import "object/project/home";
+
+/*** FAQ ***/
+@import "object/project/faq/content.scss";
+@import "object/project/faq/banner.scss";
+@import "object/project/faq/navigation.scss";
+@import "object/project/faq/room.scss";
+@import "object/project/faq/contact.scss";
+@import "object/project/faq/moving.scss";
+@import "object/project/faq/other.scss";

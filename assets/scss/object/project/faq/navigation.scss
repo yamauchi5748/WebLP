@@ -1,0 +1,44 @@
+/** ナビゲーション **/
+@import "../../../foundation/_variables";
+
+.faq {
+  .p-navigation {
+    background-color: $sub-yellow;
+
+    &__list {
+      display: flex;
+    }
+
+    &__item {
+      display: flex;
+      width: 25%;
+      margin: 22px 0 30px;
+      margin-right: 20px;
+      padding: 9px 0;
+      background-color: #fff;
+      box-shadow: 4px 4px $main-blue;
+      cursor: pointer;
+      transition: all 0.5s;
+
+      &:nth-child(4) {
+        margin-right: 0;
+      }
+
+      &:hover {
+        opacity: 0.5;
+      }
+    }
+
+    &__text {
+      width: 100%;
+      text-align: center;
+      font-weight: bold;
+    }
+
+    &__icon {
+      width: 26px;
+      height: 23px;
+      margin-right: 10px;
+    }
+  }
+}

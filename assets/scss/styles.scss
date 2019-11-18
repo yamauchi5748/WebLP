@@ -32,7 +32,11 @@
 // ==========================================================================
 @import "object/component";
 @import "object/utility";
+
+/*** TOP ***/
 @import "object/project/home";
+@import "object/project/top/interview.scss";
+@import "object/project/top/recommended.scss";
 
 /*** FAQ ***/
 @import "object/project/faq/content.scss";

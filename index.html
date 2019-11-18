@@ -1,29 +1,397 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width">
-	<meta name="format-detection" content="telephone=no">
-	<meta name="description" content="">
-	<meta name="keywords" content="">
-	<meta name="apple-mobile-web-app-title" content="">
-	<meta name="twitter:card" content="summary_large_image">
-	<meta property="og:image" content="">
-	<title></title>
-	<link rel="stylesheet" href="assets/css/common.css">
-	<link rel="stylesheet" href="assets/css/content.css">
-	<script src="assets/js/jquery.js"></script>
-	<script src="assets/js/libs.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta name="format-detection" content="telephone=no">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="apple-mobile-web-app-title" content="">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="">
+
+    <title></title>
+
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/libs.js"></script>
 </head>
+
 <body>
-	<header id="top" class="global">
-		
-	</header>
-	<main class="content">
-		<div class="l-inner p-interview">
-            
+    <header class="l-header u-header">
+        <nav class="l-header__container --pc">
+            <h1 class="l-header__container-title u-mr-100"><a href="#"><img src="./assets/img/logo.png"
+                        alt="アート不動産"></a></h1>
+            <ul class="l-header__container-list">
+                <li class="l-header__container-item">
+                    <p>お部屋探しでお困りの方<br>お気軽にご相談ください！</p>
+                </li>
+                <li class="l-header__container-item"><img src="./assets/img/search.png" alt="お部屋探し診断!"></li>
+                <li class="l-header__container-item"><img src="./assets/img/line.png" alt="LINEで無料相談"></li>
+                <li class="l-header__container-item"><img src="./assets/img/phone.png" alt="電話番号"></li>
+                <li class="l-header__container-item--darkblue">
+                    <div class="l-hamburger">
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                    </div>
+                    <span class="l-header__menu-text">Menu</span>
+                </li>
+            </ul>
+        </nav>
+        <nav class="l-header__container --sp">
+            <!-- TODO sp画面のナビ -->
+        </nav>
+    </header>
+    <main class="p-main">
+        <!-- バナー -->
+        <figure class="p-banner">
+            <img class="p-banner__main" src="./assets/img/banner.png" alt="バナー">
+            <img class="p-banner__female" src="./assets/img/banner_female.png" alt="female">
+            <img class="p-banner__male" src="./assets/img/banner_male.png" alt="male">
+            <img class="p-banner__line" src="./assets/img/banner_line.png" alt="line">
+        </figure>
+        <!-- コンテンツナビ -->
+        <div class="p-main-navigation">
+            <ul class="l-content p-main-navigation__list">
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">こんなお悩みありませんか？</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">３つのポイント</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">充実サービス</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">先輩に聞いてみました！</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">大学別の物件を探す</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">オススメの物件情報</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">初めてのお部屋探し！</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+                <li class="p-main-navigation__item">
+                    <span class="p-main-navigation__text">お部屋探し診断</span>
+                    <span class="p-main-navigation__arrow"></span>
+                </li>
+            </ul>
         </div>
-	</main>
-	<footer class="global">
-	</footer>
+        <!-- コンテンツ -->
+        <section class="u-mt-80 p-trouble">
+            <div class="l-content"></div>
+            <div class="p-trouble__title">
+                <h2 class="p-trouble__title__text">初めてのお部屋探しで<br>こんなお悩みはありませんか？</h2>
+            </div>
+            <div class="p-trouble__contents-wrapper">
+                <div class="p-trouble__contents1">
+                    <ul class="p-trouble__contents1__list">
+                        <li class="p-trouble__contents1__item">
+                            <img class="p-trouble__contents1__item__check-img" src="./assets/img/trouble_check.png"
+                                alt="チェック">
+                            <span class="p-trouble__contents1__item__text">合否が出る前に今から良い物件を確保しておきたい</span>
+                        </li>
+                        <li class="p-trouble__contents1__item">
+                            <img class="p-trouble__contents1__item__check-img" src="./assets/img/trouble_check.png"
+                                alt="チェック">
+                            <span class="p-trouble__contents1__item__text">専門学校などで、早めに進学先が決まる</span>
+                        </li>
+                        <li class="p-trouble__contents1__item">
+                            <img class="p-trouble__contents1__item__check-img" src="./assets/img/trouble_check.png"
+                                alt="チェック">
+                            <span class="p-trouble__contents1__item__text">秋にAO・推薦入試を受験予定</span>
+                        </li>
+                        <li class="p-trouble__contents1__item">
+                            <img class="p-trouble__contents1__item__check-img" src="./assets/img/trouble_check.png"
+                                alt="チェック">
+                            <span class="p-trouble__contents1__item__text">入学前にバタバタしたくない</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="p-trouble__contents2">
+                    <figure class="p-trouble__contents2__profile"><img src="./assets/img/trouble_female.png" alt="人物">
+                    </figure>
+                    <div class="p-trouble__contents2-inner">
+                        <p class="p-trouble__contents2__text">アート不動産なら！</p>
+                        <p class="p-trouble__contents2__text --second">合格前にお部屋の確保が可能です！</p>
+                        <p class="p-trouble__contents2__text --third">しかも、賃料は入居日まで発生しないので安心です！</p>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </section>
+        <section class=" p-point">
+            <div class="p-point__title">
+                <h2 class="p-point__title__text">アート不動産だからできる！<br>絶対に後悔しない３つのポイント</h2>
+            </div>
+            <div class="l-content">
+                <div class="p-point__contents-wrapper">
+                    <div class="p-point__contents">
+                        <figure class="p-point__contents__img1"><img class="p-point__contents__over-left"
+                                src="./assets/img/point1_1.png" alt="ポイント1-1"></figure>
+                        <div class="p-point__contents__inner">
+                            <figure class="u-ml-47 p-point__contents__img2"><img src="./assets/img/point1_2.png"
+                                    alt="ポイント1-2"></figure>
+                            <p class="p-point__contents__text-wrapper1">
+                                <span
+                                    class="p-point__contents__text">アート不動産には愛媛大学、松山大学、東雲大学、河原学園など県内出身のOG・OBスタッフが多数在籍しております。</span>
+                                <span
+                                    class="p-point__contents__text u-mb-35">スタッフの平均年齢も比較的若い為、学生さんの目線でプロフェッショナルなご提案をさせていただきます。</span>
+                                <span class="p-point__contents__text">・近くに美味しい飲食店があるところが良い！</span>
+                                <span class="p-point__contents__text">・大学の正門になるべく近いところが良い！</span>
+                                <span class="p-point__contents__text">など、よりリアルな生活を意識したご提案が可能です。</span>
+                                <span class="p-point__contents__text">松山いち親身な接客を自負する当社ぬお任せください！</span>
+                                </span>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="u-ml-35 p-point__contents">
+                        <div class="p-point__contents__inner">
+                            <figure class="p-point__contents__img2"><img src="./assets/img/point2_2.png" alt="ポイント2-2">
+                            </figure>
+                            <p class="p-point__contents__text-wrapper2">
+                                <span
+                                    class="p-point__contents__text u-mb-35">アート不動産は、テレビCMなどでもおなじみの、国内最大の賃貸フランチャイズ「アパマンショップ」に加盟しております。</span>
+                                <span
+                                    class="p-point__contents__text">全国に1000店舗以上あるアパマンネットワークを用いる事で、自社物件はもちろんの事、松山市・東温市エリアの多数の物件情報をお客にご提案いたします！</span>
+                            </p>
+                        </div>
+                        <figure class="p-point__contents__img1 u-mt-15"><img class="u-height-max"
+                                src="./assets/img/point2_1.png" alt="ポイント2-1"></figure>
+                    </div>
+                    <div class="p-point__contents">
+                        <figure class="p-point__contents__img1"><img class="u-height-336 p-point__contents__over-left"
+                                src="./assets/img/point3_1.png" alt="ポイント3-1"></figure>
+                        <div class="p-point__contents__inner">
+                            <figure class="u-ml-47 p-point__contents__img2"><img src="./assets/img/point3_2.png"
+                                    alt="ポイント3-2"></figure>
+                            <p class="p-point__contents__text-wrapper3">
+                                <span class="p-point__contents__text">アート不動産では、デザイナーズ・リノベーションを手掛けるリノッタと提携しております。</span>
+                                <span
+                                    class="p-point__contents__text u-mb-35">リノッタのリノベーション物件は、単なる修繕や見た目の変更だけではなく、新築のデザイナーズ物件のようなコンセプトを持っております。</span>
+                                <span class="p-point__contents__text">家賃はお安く、オシャレな物件でキャンパスライフを送りたい。</span>
+                                <span class="p-point__contents__text">そんなみなさまのご要望にお応えします！</span>
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class=" u-mt-150 p-service">
+            <div class="l-content">
+                <div class="p-service__title">
+                    <h2 class="p-service__title__text">親御さんもあんしん<br>アート不動産の充実サービス</h2>
+                </div>
+                <div class="p-service__contents">
+                    <ul class="u-mt-25 u-mr-70 p-service__contents__list">
+                        <li class="p-service__contents__item">
+                            <figure class="p-service__contents__img"><img src="./assets/img/service_contents1.png"
+                                    alt="コンテンツ"></figure>
+                            <p class="p-service__contents__text">
+                                <span class="p-service__contents__text__title">合格前に申し込みが出来る</span>
+                                <span class="p-service__contents__text__title">想起契約サービス</span>
+                                <span
+                                    class="p-service__contents__text__body">親譲りの無鉄砲で子供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも無い。</span>
+                            </p>
+                        </li>
+                        <li class="p-service__contents__item">
+                            <figure class="p-service__contents__img"><img src="./assets/img/service_contents2.png"
+                                    alt="コンテンツ"></figure>
+                            <p class="p-service__contents__text">
+                                <span class="p-service__contents__text__title">４月以前の入居でもあんしん</span>
+                                <span class="p-service__contents__text__title">ウィークリーマンション</span>
+                                <span
+                                    class="p-service__contents__text__body">親譲りの無鉄砲で子供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも無い。</span>
+                            </p>
+                        </li>
+                        <li class="p-service__contents__item">
+                            <figure class="p-service__contents__img"><img src="./assets/img/service_contents3.png"
+                                    alt="コンテンツ"></figure>
+                            <p class="p-service__contents__text">
+                                <span class="p-service__contents__text__title">隣人とのトラブルも解決</span>
+                                <span class="p-service__contents__text__title">２４時間３６５日トラブルサポート</span>
+                                <span
+                                    class="p-service__contents__text__body">親譲りの無鉄砲で子供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも無い。</span>
+                            </p>
+                        </li>
+                    </ul>
+                    <ul class="u-mt-25 u-ml-70 p-service__contents__list">
+                        <li class="p-service__contents__item">
+                            <figure class="p-service__contents__img"><img src="./assets/img/service_contents4.png"
+                                    alt="コンテンツ"></figure>
+                            <p class="p-service__contents__text">
+                                <span class="p-service__contents__text__title">初期費用を抑えられる</span>
+                                <span class="p-service__contents__text__title">「S W O」</span>
+                                <span
+                                    class="p-service__contents__text__body">親譲りの無鉄砲で子供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも無い。</span>
+                            </p>
+                        </li>
+                        <li class="p-service__contents__item">
+                            <figure class="p-service__contents__img"><img src="./assets/img/service_contents5.png"
+                                    alt="コンテンツ"></figure>
+                            <p class="p-service__contents__text">
+                                <span class="p-service__contents__text__title">紹介キャッシュバック</span>
+                                <span class="p-service__contents__text__title">キャンペーン</span>
+                                <span
+                                    class="p-service__contents__text__body">親譲りの無鉄砲で子供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも無い。</span>
+                            </p>
+                        </li>
+                        <li class="p-service__contents__item">
+                            <figure class="p-service__contents__img"><img src="./assets/img/service_contents6.png"
+                                    alt="コンテンツ"></figure>
+                            <p class="p-service__contents__text">
+                                <span class="p-service__contents__text__title">壊れても交換できる</span>
+                                <span class="p-service__contents__text__title">家具電化レンタル</span>
+                                <span
+                                    class="p-service__contents__text__body">親譲りの無鉄砲で子供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でも無い。</span>
+                            </p>
+                        </li>
+                    </ul>
+                </div>
+                <figure class="p-service__figure --first"><img src="./assets/img/service_female.png" alt="人物"></figure>
+            </div>
+        </section>
+        <section class="u-mt-150 p-interview">
+            <div class="p-interview__title">
+                <h2 class="p-interview__title__text">キャンパス生活に密着！<br>先輩聞いてみました！</h2>
+            </div>
+            <div class="l-content u-mt-15 p-interview__contents-wrapper">
+                <figure class="p-interview__figure">
+                    <img class="p-interview__figure__img" src="./assets/img/interview_female.png"
+                        alt="interview_female">
+                </figure>
+                <div class="u-mr-77 p-interview__contents1-wrapper">
+                    <div class="p-interview__contents1">
+                        <div class="u-mr-20 p-interview__contents1-inner1">
+                            <p class="p-interview__contents1-inner1__text">愛媛大学　法文学部</p>
+                            <p class="p-interview__contents1-inner1__text">人文社会学科　4回生</p>
+                            <p class="p-interview__contents1-inner1__text"><span class="u-fw-600 u-fs-17">まこと</span>さん
+                            </p>
+                        </div>
+                        <div class="p-interview__contents1-inner2">
+                            <p class="p-interview__contents1-inner2__text">私だけの空間</p>
+                            <p class="p-interview__contents1-inner2__text">一番落ち着ける</p>
+                            <p class="p-interview__contents1-inner2__text">直感で選びました！</p>
+                            <p class="p-interview__contents1-inner2__text">スタッフさんと一緒に</p>
+                        </div>
+                    </div>
+                    <div class="u-mt-10 p-interview__contents1-outer">
+                        <span>More</span>
+                        <span class="p-interview__contents1-outer__arrow"></span>
+                    </div>
+                </div>
+                <div class="u-mt-60 u-ml-77 p-interview__contents2-wrapper">
+                    <div class="p-interview__contents2">
+                        <div class="u-ml-20 p-interview__contents2-inner1">
+                            <p class="p-interview__contents2-inner1__text">愛媛大学　法文学部</p>
+                            <p class="p-interview__contents2-inner1__text">人文社会学科　4回生</p>
+                            <p class="p-interview__contents2-inner1__text"><span class="u-fw-600 u-fs-17">ゆい</span>さん
+                            </p>
+                        </div>
+                        <div class="p-interview__contents2-inner2">
+                            <p class="p-interview__contents2-inner2__text">ルームシェア</p>
+                            <p class="p-interview__contents2-inner2__text">妹と安心の</p>
+                            <p class="p-interview__contents2-inner2__text">マイルームを持ちながら</p>
+                            <p class="p-interview__contents2-inner2__text">趣味全開の</p>
+                        </div>
+                    </div>
+                    <div class="u-mt-10 p-interview__contents2-outer">
+                        <span>More</span>
+                        <span class="p-interview__contents2-outer__arrow"></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="u-mt-150 p-recommended">
+            <div class="p-recommended__title">
+                <h2 class="p-recommended__title__text">今旬の！オススメ物件紹介！</h2>
+            </div>
+            <div class="l-content p-recommended__contents">
+                <span class="p-interview__contents2-outer__arrow"></span>
+                <ul class="p-recommended__contents__list">
+                    <li class="p-recommended__contents__item  --first">
+                        <div class="p-recommended__contents__category">愛大生におすすめ</div>
+                        <figure class="p-recommended__contents__img"><img src="./assets/img/recommended_item1.png"
+                                alt=""></figure>
+                        <div class="u-mb-10 p-recommended__contents__body">
+                            <h3 class="p-recommended__contents__title">ブリリアンコート</h3>
+                            <p class="p-recommended__contents__text">市内中心部から大学エリアの中間エリアの便利な西一万町のデザイナーズマンションです。</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">家賃</p>
+                            <p class="p-recommended__contents__data">45,000円</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">学校までの距離</p>
+                            <p class="p-recommended__contents__data">愛大から1km圏内</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">注目の設備</p>
+                            <p class="p-recommended__contents__data">オートロック、宅配ボックス、ユニットバス</p>
+                        </div>
+                    </li>
+                    <li class="p-recommended__contents__item --second">
+                        <div class="p-recommended__contents__category">松大生におすすめ</div>
+                        <figure class="p-recommended__contents__img"><img src="./assets/img/recommended_item2.png"
+                                alt=""></figure>
+                        <div class="u-mb-10 p-recommended__contents__body">
+                            <h3 class="p-recommended__contents__title">ブリリアンコート</h3>
+                            <p class="p-recommended__contents__text">市内中心部から大学エリアの中間エリアの便利な西一万町のデザイナーズマンションです。</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">家賃</p>
+                            <p class="p-recommended__contents__data">45,000円</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">学校までの距離</p>
+                            <p class="p-recommended__contents__data">愛大から1km圏内</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">注目の設備</p>
+                            <p class="p-recommended__contents__data">オートロック、宅配ボックス、ユニットバス</p>
+                        </div>
+                    </li>
+                    <li class="p-recommended__contents__item --third">
+                        <div class="p-recommended__contents__category">東雲生におすすめ</div>
+                        <figure class="p-recommended__contents__img"><img src="./assets/img/recommended_item3.png"
+                                alt=""></figure>
+                        <div class="u-mb-10 p-recommended__contents__body">
+                            <h3 class="p-recommended__contents__title">ブリリアンコート</h3>
+                            <p class="p-recommended__contents__text">市内中心部から大学エリアの中間エリアの便利な西一万町のデザイナーズマンションです。</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">家賃</p>
+                            <p class="p-recommended__contents__data">45,000円</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">学校までの距離</p>
+                            <p class="p-recommended__contents__data">愛大から1km圏内</p>
+                        </div>
+                        <div class="p-recommended__contents__meta-wrapper">
+                            <p class="u-mr-10 p-recommended__contents__meta">注目の設備</p>
+                            <p class="p-recommended__contents__data">オートロック、宅配ボックス、ユニットバス</p>
+                        </div>
+                    </li>
+                </ul>
+                <span class="p-interview__contents2-outer__arrow"></span>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
+</html>

@@ -1,0 +1,196 @@
+/** インタビュー **/
+
+.p-interview {
+  &__title {
+    display: flex;
+    padding-bottom: 55px;
+    justify-content: center;
+  }
+
+  &__title__text {
+    position: relative;
+    height: fit-content;
+    padding: 50px 145px 20px;
+    text-align: center;
+    font-size: 34px;
+    background-image: url(../img/interview_title.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  &__title__text:after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    /*下線の上下位置調整*/
+    display: inline-block;
+    width: 40px;
+    /*下線の幅*/
+    height: 5px;
+    /*下線の太さ*/
+    -moz-transform: translateX(-50%);
+    -webkit-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translate(-50%);
+    /*位置調整*/
+    background-color: #11c6e7;
+    /*下線の色*/
+    z-index: 1;
+  }
+
+  &__figure__img {
+    position: absolute;
+    top: -330px;
+    right: 30px;
+  }
+
+  &__contents1 {
+    position: relative;
+    background-image: url(../img/interview_contents1_inner.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__contents1-inner1 {
+    width: fit-content;
+    margin-left: auto;
+    padding: 186px 0 23px;
+    text-align: end;
+  }
+
+  &__contents1-inner2 {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    bottom: -123px;
+    left: 20px;
+  }
+
+  &__contents1-inner2__text {
+    margin: 0 3px;
+    padding: 10px 2px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #fefb42;
+    writing-mode: vertical-lr;
+  }
+
+  &__contents1-outer {
+    display: flex;
+    width: fit-content;
+    margin-left: auto;
+    padding: 12px 5px 12px 47px;
+    font-size: 19px;
+    font-weight: 500;
+    background-image: url(../img/interview_more_back.png);
+    background-repeat: no-repeat;
+  }
+
+  &__contents1-outer__arrow {
+    display: inline-block;
+    align-self: flex-end;
+    position: relative;
+    width: 29px;
+    height: 29px;
+    margin: 0 10px 0 30px;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  &__contents1-outer__arrow::before {
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: 14px;
+    width: 12px;
+    height: 1.5px;
+    background: #fff;
+  }
+
+  &__contents1-outer__arrow::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+
+  &__contents2 {
+    position: relative;
+    background-image: url(../img/interview_contents2_inner.png);
+    background-repeat: no-repeat;
+    z-index: 1;
+  }
+
+  &__contents2-inner1 {
+    width: fit-content;
+    padding: 194px 0 23px;
+  }
+
+  &__contents2-inner2 {
+    position: absolute;
+    display: flex;
+    align-items: baseline;
+    bottom: -150px;
+    right: 45px;
+  }
+
+  &__contents2-inner2__text {
+    margin: 0 3px;
+    padding: 10px 2px;
+    font-size: 20px;
+    font-weight: 500;
+    background-color: #fefb42;
+    writing-mode: vertical-lr;
+  }
+
+  &__contents2-outer {
+    display: flex;
+    width: fit-content;
+    padding: 12px 5px 12px 47px;
+    font-size: 19px;
+    font-weight: 500;
+    background-image: url(../img/interview_more_back.png);
+    background-repeat: no-repeat;
+  }
+
+  &__contents2-outer__arrow {
+    display: inline-block;
+    align-self: flex-end;
+    position: relative;
+    width: 29px;
+    height: 29px;
+    margin: 0 10px 0 30px;
+    border-radius: 50%;
+    background-color: black;
+  }
+
+  &__contents2-outer__arrow::before {
+    position: absolute;
+    content: "";
+    left: 7px;
+    top: 14px;
+    width: 12px;
+    height: 1.5px;
+    background: #fff;
+  }
+
+  &__contents2-outer__arrow::after {
+    position: absolute;
+    content: "";
+    top: 12px;
+    left: 15px;
+    width: 6px;
+    height: 6px;
+    border-top: 2px solid #fff;
+    border-left: 2px solid #fff;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
+  }
+}

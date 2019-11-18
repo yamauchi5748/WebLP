@@ -2,49 +2,182 @@
   display
 -------------------------------------------------- */
 @include deviceSP {
-	.u-pc {display: none;}
+  .u-pc {
+    display: none;
+  }
 }
 @include devicePC {
-	.u-sp {display: none;}
+  .u-sp {
+    display: none;
+  }
 }
 
 /* --------------------------------------------------
   cleafix
 -------------------------------------------------- */
 .u-clearfix {
-	&:after {
-		display: block;
-		clear: both;
-		content: "";
-	}
+  &:after {
+    display: block;
+    clear: both;
+    content: "";
+  }
 }
 
 /* --------------------------------------------------
   align
 -------------------------------------------------- */
-.u-alignL {text-align: left;}
-.u-alignC {text-align: center;}
-.u-alignR {text-align: right;}
+.u-alignL {
+  text-align: left;
+}
+.u-alignC {
+  text-align: center;
+}
+.u-alignR {
+  text-align: right;
+}
 
 /* --------------------------------------------------
   margin
 -------------------------------------------------- */
 .u-margin {
-	&.-short {margin-bottom: 16px;}
-	&.-middle {margin-bottom: 32px;}
-	&.-large {margin-bottom: 64px;}
+  &.-short {
+    margin-bottom: 16px;
+  }
+  &.-middle {
+    margin-bottom: 32px;
+  }
+  &.-large {
+    margin-bottom: 64px;
+  }
 }
 
 /* --------------------------------------------------
   padding
 -------------------------------------------------- */
 // 縦横比指定
-.-ratio16-9 {padding-top: (9/16) * 100%;}
-.-ratio4-3 {padding-top: (3/4) * 100%;}
+.-ratio16-9 {
+  padding-top: (9/16) * 100%;
+}
+.-ratio4-3 {
+  padding-top: (3/4) * 100%;
+}
 
 /* --------------------------------------------------
   underline
 -------------------------------------------------- */
 .u-underline {
-	text-decoration: underline;
+  text-decoration: underline;
+}
+
+/** 固有のクラス **/
+
+/* --------------------------------------------------
+  margin
+-------------------------------------------------- */
+.u-mt-10 {
+  margin-top: 10px;
+}
+
+.u-mt-15 {
+  margin-top: 15px;
+}
+
+.u-mt-25 {
+  margin-top: 25px;
+}
+
+.u-mt-50 {
+  margin-top: 50px;
+}
+
+.u-mt-60 {
+  margin-top: 60px;
+}
+
+.u-mt-80 {
+  margin-top: 80px;
+}
+
+.u-mt-150 {
+  margin-top: 150px;
+}
+
+.u-mb-10 {
+  margin-bottom: 10px;
+}
+
+.u-mb-35 {
+  margin-bottom: 35px;
+}
+
+.u-ml-20 {
+  margin-left: 20px;
+}
+
+.u-ml-35 {
+  margin-left: 35px;
+}
+
+.u-ml-47 {
+  margin-left: 47px;
+}
+
+.u-ml-70 {
+  margin-left: 70px;
+}
+
+.u-ml-77 {
+  margin-left: 77px;
+}
+
+.u-mr-10 {
+  margin-right: 10px;
+}
+
+.u-mr-20 {
+  margin-right: 20px;
+}
+
+.u-mr-70 {
+  margin-right: 70px;
+}
+
+.u-mr-77 {
+  margin-right: 77px;
+}
+
+.u-mr-100 {
+  margin-right: 100px;
+}
+
+/* --------------------------------------------------
+  height
+-------------------------------------------------- */
+
+.u-height-max {
+  height: 100%;
+}
+
+.u-height-336 {
+  height: 336px;
+}
+
+/* --------------------------------------------------
+  font-weight
+-------------------------------------------------- */
+
+.u-fw-600 {
+  font-weight: 600;
+}
+
+/* --------------------------------------------------
+  font-size
+-------------------------------------------------- */
+
+.u-fs-17 {
+  font-size: 17px;
+}
+
+.u-header {
+  margin-bottom: 25px;
 }

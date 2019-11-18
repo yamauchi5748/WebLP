@@ -580,110 +580,82 @@ p {
   margin: 0; }
 
 /** 共通ヘッダー **/
-.l-header__container.--pc {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  height: 80px;
-  padding: 0 120px;
+.l-header {
   background: #fff;
   -webkit-box-shadow: 3px 3px 10px #cdcdcd;
   box-shadow: 3px 3px 10px #cdcdcd; }
-
-.l-header__container-title {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 300px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  font-size: 21px; }
-
-.l-header__container-title a {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.l-header__container-list {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  width: 100%;
-  margin: 0; }
-
-.l-header__container-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.l-header__container-item p {
-  padding: 10px;
-  font-size: 16px;
-  font-weight: 400;
-  line-height: 1.3; }
-
-.l-header__container-item {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center; }
-
-.l-header__container-item img {
-  height: 80px; }
-
-.l-header__container-item--darkblue {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  padding: 10px 20px;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  background-color: darkblue;
-  color: #feffff; }
-
-.l-header__menu-text {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: end;
-  -ms-flex-align: end;
-  align-items: flex-end;
-  height: 100%;
-  font-size: 15px;
-  font-family: monospace; }
-
-/** ハンバーガー **/
-.l-hamburger {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  width: 100%;
-  height: 100%;
-  padding: 0 15%; }
-
-.l-hamburger div {
-  height: 100%; }
-
-.l-hamburger div:nth-child(n+1) {
-  border-bottom: 2px solid #fff; }
+  .l-header__container.--pc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 80px; }
+  .l-header__container-title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 300px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    font-size: 21px; }
+  .l-header__container-title a {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .l-header__container-list {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    margin: 0; }
+  .l-header__container-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .l-header__container-item p {
+    padding: 10px;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.3; }
+  .l-header__container-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center; }
+  .l-header__container-item img {
+    height: 80px; }
+  .l-header__container-item--darkblue {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    padding: 10px 20px;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: darkblue;
+    color: #feffff; }
+  .l-header__menu-text {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+    height: 100%;
+    font-size: 15px;
+    font-family: monospace; }
 
 .l-footer__diagnosis {
   margin-top: 70px;
@@ -805,6 +777,23 @@ p {
   -ms-flex-pack: justify;
   justify-content: space-between;
   color: #fff; }
+
+/** ハンバーガー **/
+.l-hamburger {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 0 15%; }
+  .l-hamburger div {
+    height: 100%; }
+  .l-hamburger div:nth-child(n + 1) {
+    border-bottom: 2px solid #fff; }
 
 .l-content {
   position: relative;
@@ -983,6 +972,9 @@ p {
 .u-mb-10 {
   margin-bottom: 10px; }
 
+.u-mb-25 {
+  margin-bottom: 25px; }
+
 .u-mb-35 {
   margin-bottom: 35px; }
 
@@ -1013,6 +1005,9 @@ p {
 .u-mr-77 {
   margin-right: 77px; }
 
+.u-mr-80 {
+  margin-right: 80px; }
+
 .u-mr-100 {
   margin-right: 100px; }
 
@@ -1037,13 +1032,10 @@ p {
 .u-fs-17 {
   font-size: 17px; }
 
-.u-header {
-  margin-bottom: 25px; }
-
 /*** TOP ***/
 /****************************** メインページ ******************************/
 /*--- メイン ---*/
-.p-main {
+.top {
   width: 100%; }
 
 /** バナー **/
@@ -1836,25 +1828,15 @@ p {
   background-image: url(https://placehold.jp/1366x361.png);
   background-size: cover;
   background-repeat: no-repeat; }
-  .faq .p-banner__content {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -ms-flex-pack: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -ms-flex-align: center;
-    align-items: center; }
   .faq .p-banner__inner {
     text-align: center;
-    padding-top: 66px; }
+    padding: 66px 0 13px; }
   .faq .p-banner__title {
-    padding: 10px 0 19px;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    margin: .67em auto;
+    padding: 10px 30px 19px 20px;
     background-image: url(https://placehold.jp/e8e83f/ffffff/1100x260.png);
     background-size: cover;
     background-repeat: no-repeat; }
@@ -1863,8 +1845,6 @@ p {
   .faq .p-banner__text {
     display: block; }
   .faq .p-banner__pankuzu-wrapper {
-    width: 100vw;
-    min-width: 1366px;
     height: 88px;
     background-image: url(https://placehold.jp/3d4070/ffffff/1366x88.png);
     background-size: cover;
@@ -1873,7 +1853,6 @@ p {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin-top: 10px;
     -webkit-box-pack: end;
     -ms-flex-pack: end;
     justify-content: flex-end;

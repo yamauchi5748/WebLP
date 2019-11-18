@@ -7,20 +7,15 @@
     background-size:cover;
     background-repeat: no-repeat;
 
-    &__content {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-
     &__inner {
       text-align: center;
-      padding-top: 66px;
+      padding: 66px 0 13px;
     }
 
     &__title {
-      padding: 10px 0 19px;
+      width: fit-content;
+      margin: .67em auto;
+      padding: 10px 30px 19px 20px;
       background-image: url(https://placehold.jp/e8e83f/ffffff/1100x260.png);
       background-size:cover;
       background-repeat: no-repeat;
@@ -35,8 +30,6 @@
     }
 
     &__pankuzu-wrapper {
-      width: 100vw;
-      min-width: 1366px;
       height: 88px;
       background-image: url(https://placehold.jp/3d4070/ffffff/1366x88.png);
       background-size:cover;
@@ -45,7 +38,6 @@
 
     &__pankuzu {
       display: flex;
-      margin-top: 10px;
       justify-content: flex-end;
       align-items: center;
       color: #fff;

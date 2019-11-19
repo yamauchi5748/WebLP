@@ -555,11 +555,10 @@ h2 {
   white-space: nowrap; }
 
 body {
-  width: 100vw;
+  width: calc(100vw - 30px);
   min-width: 1366px;
   font-family: "Noto Sans CJK JP";
-  background-repeat: no-repeat;
-  overflow: auto; }
+  background-repeat: no-repeat; }
 
 h1, h2 {
   font-size: 35px;

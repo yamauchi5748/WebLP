@@ -56,11 +56,11 @@ h2 {
 }
 
 body {
-  width: 100vw;
+  width: calc(100vw - 30px);
 	min-width: 1366px;
   font-family: "Noto Sans CJK JP";
   background-repeat: no-repeat;
-  overflow: auto;
+  //overflow: auto;
 }
 
 h1,h2 {

@@ -1,7 +1,11 @@
 /** オススメ **/
 
 .p-recommended {
-  background-color: #cbf3ff;
+  padding-bottom: 260px;
+
+  background: url(https://placehold.jp/2ef00c/ffffff/450x300.png?text=%E4%BA%BA%E7%89%A9) #cbf3ff;
+  background-repeat: no-repeat;
+  background-position: left bottom;
 
   &__title {
     display: flex;
@@ -40,6 +44,73 @@
     background-color: #11c6e7;
     /*下線の色*/
     z-index: 1;
+  }
+
+  &__arrow {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 0 30px;
+    border-radius: 50%;
+    background-color: black;
+
+    &:hover {
+      opacity: .7;
+    }
+  }
+
+  &__arrow::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 3px;
+    background: #fff;
+  }
+
+  &__arrow::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 29px;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff;
+  }
+  
+  &__arrow.--right {
+    left: -100px;
+    top: calc(50% - 50px);
+  }
+
+  &__arrow.--right::before {
+    left: 18px;
+    top: 28.5px;
+  }
+
+  &__arrow.--right::after {
+    top: 24px;
+    left: 16px;
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  &__arrow.--left {
+    right: -100px;
+    top: calc(50% - 50px);
+  }
+
+  &__arrow.--left::before {
+    left: 17px;
+    top: 28.5px;
+  }
+
+  &__arrow.--left::after {
+    top: 24px;
+    left: 34px;
+    -webkit-transform: rotate(135deg);
+    transform: rotate(135deg);
   }
 
   &__contents {

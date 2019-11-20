@@ -555,7 +555,7 @@ h2 {
   white-space: nowrap; }
 
 body {
-  width: calc(100vw - 30px);
+  width: calc(100vw - 17px);
   min-width: 1366px;
   font-family: "Noto Sans CJK JP";
   background-repeat: no-repeat; }
@@ -1557,8 +1557,8 @@ p {
 .p-interview__contents1-outer__arrow::before {
   position: absolute;
   content: "";
-  left: 7px;
-  top: 14px;
+  left: 8px;
+  top: 14.1px;
   width: 12px;
   height: 1.5px;
   background: #fff; }
@@ -1636,8 +1636,8 @@ p {
 .p-interview__contents2-outer__arrow::before {
   position: absolute;
   content: "";
-  left: 7px;
-  top: 14px;
+  left: 8px;
+  top: 14.4px;
   width: 12px;
   height: 1.5px;
   background: #fff; }
@@ -1657,7 +1657,10 @@ p {
 
 /** オススメ **/
 .p-recommended {
-  background-color: #cbf3ff; }
+  padding-bottom: 260px;
+  background: url(https://placehold.jp/2ef00c/ffffff/450x300.png?text=%E4%BA%BA%E7%89%A9) #cbf3ff;
+  background-repeat: no-repeat;
+  background-position: left bottom; }
   .p-recommended__title {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1697,6 +1700,55 @@ p {
     background-color: #11c6e7;
     /*下線の色*/
     z-index: 1; }
+  .p-recommended__arrow {
+    position: absolute;
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    margin: 0 10px 0 30px;
+    border-radius: 50%;
+    background-color: black; }
+    .p-recommended__arrow:hover {
+      opacity: .7; }
+  .p-recommended__arrow::before {
+    position: absolute;
+    content: "";
+    width: 27px;
+    height: 3px;
+    background: #fff; }
+  .p-recommended__arrow::after {
+    position: absolute;
+    content: "";
+    top: 20px;
+    left: 29px;
+    width: 12px;
+    height: 12px;
+    border-top: 3px solid #fff;
+    border-left: 3px solid #fff; }
+  .p-recommended__arrow.--right {
+    left: -100px;
+    top: calc(50% - 50px); }
+  .p-recommended__arrow.--right::before {
+    left: 18px;
+    top: 28.5px; }
+  .p-recommended__arrow.--right::after {
+    top: 24px;
+    left: 16px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg); }
+  .p-recommended__arrow.--left {
+    right: -100px;
+    top: calc(50% - 50px); }
+  .p-recommended__arrow.--left::before {
+    left: 17px;
+    top: 28.5px; }
+  .p-recommended__arrow.--left::after {
+    top: 24px;
+    left: 34px;
+    -webkit-transform: rotate(135deg);
+    -ms-transform: rotate(135deg);
+    transform: rotate(135deg); }
   .p-recommended__contents {
     position: relative; }
   .p-recommended__contents__list {

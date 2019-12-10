@@ -1,0 +1,18 @@
+{
+    "root": true,
+    "extends": "eslint:recommended",
+    "rules": {
+      "indent": [ 2, 4 ],   // インデント
+      "linebreak-style": [ 0, "unix" ], // 改行コード
+      "semi": [ 2, "always" ]   // セミコロン
+    },
+    "env": {
+      "es6": true,      // es6に対応するか
+      "node": true,     // nodeで実行されるか
+      "browser": true,  // ブラウザで動作するか
+      "jquery": true    // jQueryを使用するか
+    },
+    "parserOptions": {
+        "sourceType": "module"
+    }
+  }

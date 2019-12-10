@@ -1,0 +1,42 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3",
+    Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  line-height: 1.8;
+}
+
+@include deviceSP {
+  body {
+    line-height: 1.5;
+    min-width: 1%;
+    overflow-x: hidden;
+    position: relative;
+  }
+}
+
+/* mouseover
+--------------------------------------------------*/
+@include devicePC {
+  .over {
+    &:hover {
+      opacity: 0.6;
+      transition: opacity 0.3s;
+    }
+  }
+}
+
+/* link
+--------------------------------------------------*/
+a {
+  color: #0851d7;
+  transition: all 0.4s;
+  &:link,
+  &:active,
+  &:visited {
+    text-decoration: none;
+  }
+  &:hover,
+  &:focus {
+    text-decoration: underline;
+    transition: all 0.4s;
+  }
+}

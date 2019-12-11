@@ -9,4 +9,4 @@ rem npmインストール
 docker-compose exec node npm install
 
 rem サーバ起動
-docker-compose exec node npm run watch
+docker-compose exec node npm run watch:server

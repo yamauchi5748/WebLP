@@ -85,3 +85,37 @@
   max-width: auto; // IE対策
   max-width: initial;
 }
+
+
+// ------------------------------------------
+// 要素を移動させる
+// ------------------------------------------
+@mixin Move($from: 0 0 0 0, $to: 20px 0 0 20px, $speed: 0.5s, $duration: 2s, $delay: 0.5s, $from_opacity: 1, $to_opacity: 1) {
+  animation: move $duration forwards;
+  animation-delay: $delay;
+  transition: $speed;
+  @keyframes move {
+    0% {
+      opacity: $from_opacity;
+      padding: $from;
+    }
+    100% {
+      opacity: $to_opacity;
+      padding: $to;
+    }
+  }
+}
+
+@mixin contentScale {
+  animation: contentScale 2.6s forwards;
+  @keyframes contentScale {
+    70% {
+      -webkit-transform: perspective(800px) scale(0.9) rotateX(15deg);
+      transform: perspective(800px) scale(0.9) rotateX(15deg);
+    }
+    100% {
+      -webkit-transform: perspective(800px) scale(1) rotateX(0);
+      transform: perspective(800px) scale(1) rotateX(0);
+    }
+  }
+}

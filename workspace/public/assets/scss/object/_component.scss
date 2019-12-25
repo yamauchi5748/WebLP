@@ -27,3 +27,20 @@
   position: relative;
   top: -2px;
 }
+
+.c-arrow {
+  position: absolute;
+    z-index: 1;
+    background-color: transparent;
+    top: calc(50% - 14px);
+
+    &.-next {
+      @include arrow(32, 2.5, "#fff", "right");
+      right: 15px;
+    }
+
+    &.-prev {
+      @include arrow(32, 2.5, "#fff", "left");
+      left: 15px;
+    }
+}

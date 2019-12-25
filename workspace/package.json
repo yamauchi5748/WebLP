@@ -30,7 +30,8 @@
         "watch:server": "nodemon -L ./src_server/server.js",
         "watch:client": "webpack --watch",
         "build": "webpack --mode=production",
-        "fix": "eslint --fix ./src_client/*.js"
+        "fix:webpack": "webpack --fix",
+        "fix:eslint": "eslint --fix ./src_client/*.js"
     },
     "nodemonConfig": {
         "restartable": "rs",

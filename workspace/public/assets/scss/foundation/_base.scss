@@ -40,3 +40,19 @@ a {
     transition: all 0.4s;
   }
 }
+
+body {
+  padding-top: 38px;
+}
+
+h1 {
+  font-size: 9px;
+}
+
+ul {
+  list-style: none;
+}
+
+.slick-next {
+  right: 25px !important;
+}

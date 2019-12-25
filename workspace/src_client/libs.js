@@ -1,4 +1,7 @@
 $(function () {
+    $('.l-header').delay(900).animate({ opacity: 1 }, 1000);
+
+
     /* アンカー
     ------------------------------*/
     // ロールオーバー
@@ -115,5 +118,22 @@ function linkTel() {
         } else {
             $(this).removeAttr('href');
         }
+    });
+}
+
+setClassWithScroll(".l-header__mv");
+
+function setClassWithScroll(attr_name) {
+    $(window).scroll(function () {
+        $(attr_name).each(function () {
+            var target = $(this).offset().top;
+            var scroll = $(window).scrollTop();
+            var windowHeight = $(window).height();
+            if (scroll > target - windowHeight + windowHeight / 5) {
+                $(this).addClass("-move");
+            } else {
+                $(this).removeClass("-move");
+            }
+        });
     });
 }

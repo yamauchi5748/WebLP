@@ -1,3 +1,7 @@
 .l-inner {
-    width: 100%;
+  margin: 0 10px;
+
+  @media screen and (min-width: 768px) {
+    height: 30%;
+  }
 }

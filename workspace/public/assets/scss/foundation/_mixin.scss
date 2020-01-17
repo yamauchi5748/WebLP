@@ -90,11 +90,73 @@
 // ------------------------------------------
 // 要素を移動させる
 // ------------------------------------------
-@mixin Move($from: 0 0 0 0, $to: 20px 0 0 20px, $speed: 0.5s, $duration: 2s, $delay: 0.5s, $from_opacity: 1, $to_opacity: 1) {
-  animation: move $duration forwards;
+@mixin Move($name: top, $from: 0 0 0 0, $to: 20px 0 0 20px, $speed: 0.5s, $duration: 2s, $delay: 0.5s, $from_opacity: 1, $to_opacity: 1) {
+  animation: $name $duration forwards;
   animation-delay: $delay;
   transition: $speed;
-  @keyframes move {
+  @keyframes top {
+    0% {
+      opacity: $from_opacity;
+      padding: $from;
+    }
+    100% {
+      opacity: $to_opacity;
+      padding: $to;
+    }
+  }
+}
+
+@mixin MoveTop($from: 0 0 0 0, $to: 20px 0 0 20px, $speed: 0.5s, $duration: 2s, $delay: 0.5s, $from_opacity: 1, $to_opacity: 1) {
+  animation: top $duration forwards;
+  animation-delay: $delay;
+  transition: $speed;
+  @keyframes top {
+    0% {
+      opacity: $from_opacity;
+      padding: $from;
+    }
+    100% {
+      opacity: $to_opacity;
+      padding: $to;
+    }
+  }
+}
+@mixin MoveRight($from: 0 0 0 0, $to: 20px 0 0 20px, $speed: 0.5s, $duration: 2s, $delay: 0.5s, $from_opacity: 1, $to_opacity: 1) {
+  animation: right $duration forwards;
+  animation-delay: $delay;
+  transition: $speed;
+  @keyframes right {
+    0% {
+      opacity: $from_opacity;
+      padding: $from;
+    }
+    100% {
+      opacity: $to_opacity;
+      padding: $to;
+    }
+  }
+}
+@mixin MoveBottom($from: 0 0 0 0, $to: 20px 0 0 20px, $speed: 0.5s, $duration: 2s, $delay: 0.5s, $from_opacity: 1, $to_opacity: 1) {
+  animation: bottom $duration forwards;
+  animation-delay: $delay;
+  transition: $speed;
+  @keyframes bottom {
+    0% {
+      opacity: $from_opacity;
+      padding: $from;
+    }
+    100% {
+      opacity: $to_opacity;
+      padding: $to;
+    }
+  }
+}
+
+@mixin MoveLeft($from: 0 0 0 0, $to: 20px 0 0 20px, $speed: 0.5s, $duration: 2s, $delay: 0.5s, $from_opacity: 1, $to_opacity: 1) {
+  animation: left $duration forwards;
+  animation-delay: $delay;
+  transition: $speed;
+  @keyframes left {
     0% {
       opacity: $from_opacity;
       padding: $from;

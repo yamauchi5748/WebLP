@@ -20,6 +20,14 @@
 
     &__meta {
       font-size: 3.2vw;
+
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    &__text {
+      
     }
 
     & twitter-widget {
@@ -28,6 +36,8 @@
 
     &__thumb {
       margin: 20px auto;
+      width: auto;
+      text-align: center;
 
       img {
         max-width: 100%;

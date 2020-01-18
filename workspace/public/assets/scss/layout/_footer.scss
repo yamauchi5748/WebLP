@@ -3,8 +3,8 @@
   padding: 10px;
   justify-content: space-around;
   align-items: center;
-  //background-color: $main-light-color;
-  background-image: url(/assets/img/footer_back.png);
+  background-color: #fff;
+  box-shadow: 0 0 2px #000;
 
   &__logo {
     flex-basis: 30%;

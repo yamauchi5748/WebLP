@@ -5,25 +5,30 @@
                 <h2 class="p-popular__title c-section__title">人気記事</h2>
             </div>
             <ul class="p-popular__list c-section__list">
+                <?php query_posts('posts_per_page=3'); ?>
                 <?php if (have_posts()) : ?>
 
                 <?php
+                $count = 0;
                 // 記事のループ
                 while (have_posts()) : the_post();
-                    $category = get_the_category();
-                    $cat_name = $category[0]->cat_name;
-                    $cat_slug = $category[0]->category_nicename;
+                    $category = get_the_category()[0];
+                    $cat_name = $category->cat_name;
+                    $cat_slug = $category->category_nicename;
                     //カテゴリのリンクURLを取得
                     $cat_link = get_category_link($category->cat_ID);
+
+                    //記事数カウント
+                    $count++;
                 ?>
                     <li class="p-popular__item c-section__item">
-                        <figure class="p-popular__rank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ico_rank1.png"></figure>
+                        <figure class="p-popular__rank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ico_rank<?php echo $count; ?>.png"></figure>
                         <article class="p-popular__article__wrapper">
-                            <figure class="p-popular__item__thumb c-section__item__thumb"><?php the_post_thumbnail(); ?></figure>
+                            <figure class="p-popular__item__thumb c-section__item__thumb"><a class="lightBox" href="<?php echo get_the_post_thumbnail_url(); ?>" data-lightbox="group"><?php the_post_thumbnail(); ?></a></figure>
                             <div class="p-popular__article c-section__article">
                                 <div class="p-popular__article__header c-section__article__header">
                                     <a
-                                        class="p-popular__article__category c-section__article__category -<?php echo $cat_slug; ?>" href="<?php $cat_link ?>"><?php echo $cat_name; ?></a>
+                                        class="p-popular__article__category c-section__article__category -<?php echo $cat_slug; ?>" href="<?php echo $cat_link; ?>"><?php echo $cat_name; ?></a>
                                     <h3 class="p-popular__article__title c-section__article__title">
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h3>
@@ -105,7 +110,7 @@
                         $categories = get_categories('parent=0');
                         
                         //取得したカテゴリへの各種処理
-                        foreach($categories as $val){
+                        foreach ($categories as $val) {
 
                             //カテゴリのリンクURLを取得
                             $cat_link = get_category_link($val->cat_ID);

@@ -547,12 +547,9 @@ a {
 
 body {
   padding-top: 54px;
-  background-image: url(/assets/img/back.png);
-  background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat; }
-  @media screen and (max-width: 767) {
+  background-image: url(../img/back.png);
+  background-attachment: fixed; }
+  @media screen and (min-width: 768) {
     body {
       padding-top: 58px; } }
 
@@ -788,6 +785,8 @@ ul {
       border-top: none; }
     .c-section__item__thumb {
       width: 140px; }
+      .c-section__item__thumb img {
+        border: 1px solid #ddd; }
   .c-section__article {
     margin-left: 15px;
     -webkit-box-flex: 1;
@@ -811,12 +810,12 @@ ul {
         background-color: lightskyblue;
         -webkit-box-shadow: 2px 2px 2px darkgrey;
         box-shadow: 2px 2px 2px darkgrey; }
-      .c-section__article__category.-shop {
+      .c-section__article__category.-doujin {
         background-color: palevioletred;
         -webkit-box-shadow: 2px 2px 2px lightcoral;
         box-shadow: 2px 2px 2px lightcoral; }
       .c-section__article__category.-news {
-        background-color: palevioletred;
+        background-color: darkmagenta;
         -webkit-box-shadow: 2px 2px 2px lightcoral;
         box-shadow: 2px 2px 2px lightcoral; }
       @media screen and (min-width: 768px) {
@@ -5884,7 +5883,7 @@ ul {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex;
-      max-width: 1100px;
+      max-width: 1200px;
       margin: 0 auto; } }
   .home .p-news {
     opacity: 1; }
@@ -6051,7 +6050,7 @@ ul {
           font-size: 14px; } }
   @media screen and (min-width: 768px) {
     .home .p-flexWrap {
-      width: 35%; } }
+      width: 32%; } }
 
 @media screen and (min-width: 768px) {
   .post .p-post {
@@ -6061,14 +6060,23 @@ ul {
   background-color: lightgray; }
 
 .post .p-post__title {
-  width: 100%;
-  text-align: center; }
+  width: 100%; }
 
 .post .p-post__contents {
   padding: 10px;
-  background-color: #f5f5f5; }
+  background-color: #f5f5f5;
+  /* wordpressのGutenbergエディタに対応 */ }
   .post .p-post__contents figure {
     text-align: center; }
+    .post .p-post__contents figure img {
+      border: 1px solid #ddd; }
+  .post .p-post__contents table {
+    width: 100%; }
+  .post .p-post__contents table,
+  .post .p-post__contents th,
+  .post .p-post__contents td {
+    padding: 10px 5px;
+    border: 1px solid #000; }
 
 .post .p-post__meta {
   font-size: 3.2vw; }
@@ -6092,6 +6100,89 @@ ul {
 .post .p-post__data {
   text-align: center; }
 
+.comments {
+  padding: 10px;
+  border: 1px dashed #aaa; }
+  .comments-item {
+    border-top: 1px solid #aaa;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: 14px; }
+  .comments-meta-list {
+    margin: 10px 0; }
+  .comments-form-author input, .comments-form-email input {
+    margin-left: 5px;
+    border: 1px solid #bbb;
+    padding: 7px;
+    border-radius: 4px;
+    color: #444; }
+    .comments-form-author input:focus, .comments-form-email input:focus {
+      border: none; }
+    @media screen and (min-width: 768px) {
+      .comments-form-author input, .comments-form-email input {
+        font-size: 16px;
+        outline: none; }
+        .comments-form-author input:focus, .comments-form-email input:focus {
+          border: 1px solid orange; } }
+  .comments textarea {
+    display: block;
+    width: 100%;
+    height: 15vh;
+    margin: 7px 0;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #444;
+    font-size: 4.8vw; }
+    .comments textarea:focus {
+      border: none; }
+    @media screen and (min-width: 768px) {
+      .comments textarea {
+        font-size: 16px;
+        outline: none; }
+        .comments textarea:focus {
+          border: 1px solid orange; } }
+  .comments .submit,
+  .comments .comment-reply-link,
+  .comments #cancel-comment-reply-link {
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 4px;
+    color: orange;
+    outline: none;
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .comments .submit:focus,
+    .comments .comment-reply-link:focus,
+    .comments #cancel-comment-reply-link:focus {
+      background-color: orange;
+      color: #fff; }
+    @media screen and (min-width: 768px) {
+      .comments .submit,
+      .comments .comment-reply-link,
+      .comments #cancel-comment-reply-link {
+        cursor: pointer; }
+        .comments .submit:hover,
+        .comments .comment-reply-link:hover,
+        .comments #cancel-comment-reply-link:hover {
+          background-color: orange;
+          color: #fff;
+          opacity: 1; } }
+  .comments .comment-reply-title small {
+    display: block;
+    margin: 10px 0; }
+
 .slick-dots li button:before {
   font-size: 35px !important;
   color: red !important; }
+
+.lightBox {
+  opacity: 1 !important; }
+  .lightBox img {
+    -webkit-transition: 0.5s;
+    -o-transition: 0.5s;
+    transition: 0.5s; }
+    .lightBox img:hover {
+      -webkit-box-shadow: 0px 0px 8px #999;
+      box-shadow: 0px 0px 8px #999; }

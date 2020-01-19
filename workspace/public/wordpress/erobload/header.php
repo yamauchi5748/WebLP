@@ -5,19 +5,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width">
     <meta name="format-detection" content="telephone=no">
-    <meta name="description" content="エロゲまとめ・レビュー・攻略・おすすめなどの配信を行うサイトです。">
-    <meta name="keywords" content="エロゲまとめ・レビュー・攻略・おすすめなどの配信を行うサイトです。">
+    <meta name="description" content="エロゲ。同人・レビュー・攻略・おすすめなどの配信を行うサイトです。<?php echo get_the_excerpt(); ?>">
+    <meta name="keywords" content="えろげぶろーど エロゲ まとめ レビュー 攻略 おすすめ 配信 webサイト <?php echo the_title(); ?>">
     <meta name="apple-mobile-web-app-title" content="">
     <meta name="twitter:card" content="summary_large_image">
     <meta property="og:type" content="website">
-    <meta property="og:image" content="https://pbs.twimg.com/profile_images/1154014323150213125/ElVJKbgN_x96.jpg">
+    <meta property="og:image" content="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png">
 
-    <title>エロゲまとめ・レビュー・攻略・おすすめなどの配信を行うサイトです。</title>
+    <title>えろげぶろーど | <?php echo the_title(); ?></title>
 
-    <link rel="shortcut icon" href="https://pbs.twimg.com/profile_images/1154014323150213125/ElVJKbgN_x96.jpg">
+    <link rel="shortcut icon" href="<?php echo get_template_directory_uri(); ?>/assets/img/logo.png">
     <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/css/styles.css">
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick/slick-theme.css" />
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/assets/css/slick/slick.css" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.7.1/css/lightbox.css" rel="stylesheet">
     <script src="<?php echo get_template_directory_uri(); ?>/assets/js/lib.js"></script>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-156336637-1"></script>

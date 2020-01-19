@@ -30,7 +30,7 @@
 
 .c-section {
   align-self: flex-start;
-  
+
   &__inner {
     @media screen and (min-width: 768px) {
       height: 100%;
@@ -83,6 +83,9 @@
 
     &__thumb {
       width: 140px;
+      img {
+        border: 1px solid #ddd;
+      }
     }
   }
 
@@ -107,13 +110,13 @@
         box-shadow: 2px 2px 2px darkgrey;
       }
 
-      &.-shop {
+      &.-doujin {
         background-color: palevioletred;
         box-shadow: 2px 2px 2px lightcoral;
       }
 
       &.-news {
-        background-color: palevioletred;
+        background-color: darkmagenta;
         box-shadow: 2px 2px 2px lightcoral;
       }
 

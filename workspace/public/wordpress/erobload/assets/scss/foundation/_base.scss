@@ -45,13 +45,10 @@ a {
 
 body {
   padding-top: 54px;
-  background-image: url(/assets/img/back.png);
+  background-image: url(../img/back.png);
   background-attachment: fixed;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
 
-  @media screen and (max-width: 767) {
+  @media screen and (min-width: 768) {
     padding-top: 58px;
   }
 }

@@ -4,21 +4,22 @@
         <section id="news" class="l-inner p-news c-section u-mt-40">
             <div class="c-section__inner">
                 <div class="p-news__title__wrapper c-section__title__wrapper">
-                    <h2 class="p-news__title c-section__title">最新情報</h2>
-                    <a class="p-news__listLink c-section__listLink">記事一覧</a>
+                    <h2 class="p-news__title c-section__title"><?php single_cat_title(); ?></h2>
                 </div>
                 <ul class="p-news__list c-section__list">
-                <?php query_posts('posts_per_page=5'); ?>
+                <?php 
+                    $category = get_the_category()[0];
+                    $cat_name = $category->cat_name;
+                    $cat_slug = $category->category_nicename;
+                    //カテゴリのリンクURLを取得
+                    $cat_link = get_category_link($category->cat_ID);
+                    query_posts('cat='.$category->cat_ID); 
+                ?>
                 <?php if (have_posts()) : ?>
 
                     <?php
                     // 記事のループ
                     while (have_posts()) : the_post();
-                        $category = get_the_category();
-                        $cat_name = $category[0]->cat_name;
-                        $cat_slug = $category[0]->category_nicename;
-                        //カテゴリのリンクURLを取得
-                        $cat_link = get_category_link($category[0]->cat_ID);
                     ?>
                         <li class="p-news__item c-section__item">
                             <figure class="p-news__item__thumb c-section__item__thumb"><a class="lightBox" href="<?php echo get_the_post_thumbnail_url(); ?>" data-lightbox="group"><?php the_post_thumbnail(); ?></a></figure>

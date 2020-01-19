@@ -1,0 +1,98 @@
+.comments {
+  padding: 10px;
+  border: 1px dashed #aaa;
+
+  &-item {
+    border-top: 1px solid #aaa;
+    margin-top: 10px;
+    padding-top: 15px;
+    font-size: 14px;
+  }
+
+  &-meta-list {
+    margin: 10px 0;
+  }
+
+  &-form {
+    &-author,
+    &-email {
+      input {
+        margin-left: 5px;
+        border: 1px solid #bbb;
+        padding: 7px;
+        border-radius: 4px;
+        color: #444;
+
+        &:focus {
+          border: none;
+        }
+
+        @media screen and (min-width: 768px) {
+          font-size: 16px;
+          outline: none;
+
+          &:focus {
+            border: 1px solid orange;
+          }
+        }
+      }
+    }
+  }
+
+  textarea {
+    display: block;
+    width: 100%;
+    height: 15vh;
+    margin: 7px 0;
+    border: 1px solid #bbb;
+    border-radius: 4px;
+    color: #444;
+    font-size: 4.8vw;
+
+    &:focus {
+      border: none;
+    }
+
+    @media screen and (min-width: 768px) {
+      font-size: 16px;
+      outline: none;
+
+      &:focus {
+        border: 1px solid orange;
+      }
+    }
+  }
+
+  .submit,
+  .comment-reply-link,
+  #cancel-comment-reply-link {
+    background-color: transparent;
+    border: 1px solid orange;
+    border-radius: 5px;
+    padding: 4px;
+    color: orange;
+    outline: none;
+    transition: 0.5s;
+
+    &:focus {
+      background-color: orange;
+      color: #fff;
+    }
+
+    @media screen and (min-width: 768px) {
+      cursor: pointer;
+      &:hover {
+        background-color: orange;
+        color: #fff;
+        opacity: 1;
+      }
+    }
+  }
+
+  .comment-reply-title {
+    small {
+      display: block;
+      margin: 10px 0;
+    }
+  }
+}

@@ -10,15 +10,30 @@
 
     &__title {
       width: 100%;
-      text-align: center;
     }
 
     &__contents {
       padding: 10px;
       background-color: #f5f5f5;
 
+      /* wordpressのGutenbergエディタに対応 */
       figure {
         text-align: center;
+
+        img {
+          border: 1px solid #ddd;
+        }
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table,
+      th,
+      td {
+        padding: 10px 5px;
+        border: 1px solid #000;
       }
     }
 

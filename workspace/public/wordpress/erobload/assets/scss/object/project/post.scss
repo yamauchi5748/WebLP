@@ -1,0 +1,58 @@
+.post {
+  .p-post {
+    @media screen and (min-width: 768px) {
+      width: 65%;
+    }
+
+    &__title__wrapper {
+      background-color: lightgray;
+    }
+
+    &__title {
+      width: 100%;
+      text-align: center;
+    }
+
+    &__contents {
+      padding: 10px;
+      background-color: #f5f5f5;
+
+      figure {
+        text-align: center;
+      }
+    }
+
+    &__meta {
+      font-size: 3.2vw;
+
+      @media screen and (min-width: 768px) {
+        font-size: 16px;
+      }
+    }
+
+    &__text {
+    }
+
+    & twitter-widget {
+      margin: 0 auto;
+    }
+
+    &__thumb {
+      margin: 20px auto;
+      width: auto;
+      text-align: center;
+
+      img {
+        max-width: 100%;
+      }
+    }
+
+    &__table__header {
+      width: 50%;
+    }
+
+    &__data {
+      text-align: center;
+    }
+  }
+}

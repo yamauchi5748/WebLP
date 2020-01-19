@@ -1,0 +1,15 @@
+@charset "UTF-8";
+/** 引っ越し **/
+.faq .p-moving {
+  counter-reset: number; }
+  .faq .p-moving__title {
+    padding: 191px 0 110px;
+    background-image: url(https://placehold.jp/07db00/ffffff/175x255.png?text=%E4%BA%BA%E7%89%A9);
+    background-position: left 20px bottom; }
+  .faq .p-moving__title__text {
+    width: 610px;
+    padding: 66px 0 41px;
+    background-image: url(https://placehold.jp/ffff00/ffffff/610x200.png); }
+  .faq .p-moving__caption__text::before {
+    counter-increment: number;
+    content: "Q" counter(number) ". "; }

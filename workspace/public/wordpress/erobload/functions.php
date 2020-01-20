@@ -12,6 +12,16 @@ function my_after_setup_theme()
 }
 add_action('after_setup_theme', 'my_after_setup_theme');
 
+/*
+ * 作成した独自RSSテンプレートを読み込む
+ */
+function do_feed_new() {
+    load_template( get_template_directory() . '/feeds/feed-new.php');
+}
+//独自RSSテンプレート呼び出し用アクションフックを追加
+add_action('do_feed_new', 'do_feed_new');
+
+/* コメント機能作成 */
 function mytheme_comments($comment, $args, $depth){
     $GLOBALS['comment'] = $comment; ?>
     <li id="li-comment-<?php comment_ID() ?>" class="comments-item">

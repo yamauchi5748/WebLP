@@ -4,6 +4,7 @@
         <section id="news" class="l-inner p-news c-section u-mt-40">
             <div class="c-section__inner">
                 <div class="p-news__title__wrapper c-section__title__wrapper">
+                <a class="c-rss" href="/?feed=atom" target="blank"><img class="c-rss__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/rss_feed.png"></a>
                     <h2 class="p-news__title c-section__title">最新情報</h2>
                     <a class="p-news__listLink c-section__listLink">記事一覧</a>
                 </div>

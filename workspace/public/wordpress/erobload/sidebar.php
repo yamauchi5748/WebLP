@@ -22,7 +22,7 @@
                     $count++;
                 ?>
                     <li class="p-popular__item c-section__item">
-                        <figure class="p-popular__rank"><img src="<?php echo get_template_directory_uri(); ?>/assets/img/ico_rank<?php echo $count; ?>.png"></figure>
+                        <figure class="p-popular__rank"><img src="/assets/img/ico_rank<?php echo $count; ?>.png"></figure>
                         <article class="p-popular__article__wrapper">
                             <figure class="p-popular__item__thumb c-section__item__thumb"><a class="lightBox" href="<?php echo get_the_post_thumbnail_url(); ?>" data-lightbox="group"><?php the_post_thumbnail(); ?></a></figure>
                             <div class="p-popular__article c-section__article">

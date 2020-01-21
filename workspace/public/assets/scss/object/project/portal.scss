@@ -1,0 +1,29 @@
+.p-contents {
+  &__title__wrapper {
+    background-color: #F7DD84;
+  }
+
+  &__list {
+      display: flex;
+      flex-wrap: wrap;
+  }
+
+  &__item {
+    display: flex;
+    max-width: 300px;
+    flex-basis: 100%;
+    margin: 10px auto;
+    border: none;
+    box-shadow: 0 0 2px #000;      
+
+    &__thumb {
+      flex-basis: 100%;
+    }
+  }
+
+  &__article {
+      &__time {
+          font-size: 13px;
+      }
+  }
+}

@@ -5,17 +5,36 @@
     }
 
     &__title__wrapper {
-      background-color: lightgray;
+      background-color: #F7DD84;
     }
 
     &__title {
       width: 100%;
-      text-align: center;
     }
 
     &__contents {
       padding: 10px;
-      background-color: #F5F5F5;
+      background-color: #fff;
+
+      /* wordpressのGutenbergエディタに対応 */
+      figure {
+        text-align: center;
+
+        img {
+          border: 1px solid #ddd;
+        }
+      }
+
+      table {
+        width: 100%;
+      }
+
+      table,
+      th,
+      td {
+        padding: 10px 5px;
+        border: 1px solid #000;
+      }
     }
 
     &__meta {
@@ -27,7 +46,6 @@
     }
 
     &__text {
-      
     }
 
     & twitter-widget {
@@ -50,6 +68,19 @@
 
     &__data {
       text-align: center;
+    }
+  }
+
+  .p-post__sideContents {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    &__inner {
+      margin: 0 25px;
+
+      img {
+        margin-bottom: 5px;
+      }
     }
   }
 }

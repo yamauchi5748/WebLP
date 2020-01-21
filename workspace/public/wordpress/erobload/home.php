@@ -5,7 +5,7 @@
             <div class="c-section__inner">
                 <div class="p-news__title__wrapper c-section__title__wrapper">
                     <h2 class="p-news__title c-section__title">記事一覧</h2>
-                    <a class="c-rss" href="/?feed=atom" target="blank"><img class="c-rss__img" src="<?php echo get_template_directory_uri(); ?>/assets/img/rss_feed.png"></a>
+                    <a class="c-rss" href="/?feed=atom" target="blank"><img class="c-rss__img" src="/assets/img/rss_feed.png"></a>
                 </div>
                 <ul class="p-news__list c-section__list">
                 <?php 

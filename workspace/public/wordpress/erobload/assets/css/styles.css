@@ -509,7 +509,7 @@ menu {
   padding: 0; }
 
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
+  font-family: "游ゴシック体","Yu Gothic",-apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3", Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   line-height: 1.8;
   min-width: 1150px; }
 
@@ -560,6 +560,9 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0; }
+
+p {
+  font-size: 17px; }
 
 @media screen and (max-width: 767) {
   .sp {
@@ -635,7 +638,7 @@ ul {
 
 .l-header__container {
   position: fixed;
-  top: -35vh;
+  top: -40vh;
   width: 100%;
   background-color: #F7DD84;
   -webkit-transition: 0.5s;
@@ -673,12 +676,10 @@ ul {
 
 .l-header__mv__link {
   height: 100%; }
-
-.l-header__mv__img {
-  width: 100%;
-  height: 22vw;
-  -webkit-box-shadow: 1px 1px 4px #707070;
-  box-shadow: 1px 1px 4px #707070; }
+  .l-header__mv__link img {
+    width: 100%;
+    -webkit-box-shadow: 1px 1px 4px #707070;
+    box-shadow: 1px 1px 4px #707070; }
 
 .l-overlay {
   display: none;
@@ -746,9 +747,6 @@ ul {
 .c-section {
   -ms-flex-item-align: start;
   align-self: flex-start; }
-  @media screen and (min-width: 768px) {
-    .c-section__inner {
-      height: 100%; } }
   .c-section__title__wrapper {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -774,7 +772,7 @@ ul {
   .c-section__list {
     margin: 0 0.5px 0.5px 0;
     padding: 10px;
-    background: #f5f5f5; }
+    background: #fff; }
     @media screen and (min-width: 768px) {
       .c-section__list {
         overflow-y: auto; } }
@@ -806,23 +804,11 @@ ul {
       font-size: 3.3vw;
       font-weight: bold;
       white-space: pre; }
-      .c-section__article__category.-game {
-        background-color: lightskyblue;
-        -webkit-box-shadow: 2px 2px 2px darkgrey;
-        box-shadow: 2px 2px 2px darkgrey; }
-      .c-section__article__category.-doujin {
-        background-color: palevioletred;
-        -webkit-box-shadow: 2px 2px 2px lightcoral;
-        box-shadow: 2px 2px 2px lightcoral; }
-      .c-section__article__category.-news {
-        background-color: darkmagenta;
-        -webkit-box-shadow: 2px 2px 2px lightcoral;
-        box-shadow: 2px 2px 2px lightcoral; }
       @media screen and (min-width: 768px) {
         .c-section__article__category {
           font-size: 16px; } }
     .c-section__article__title {
-      display: inline;
+      display: block;
       margin: 0; }
       .c-section__article__title a {
         font-size: 4vw;
@@ -855,8 +841,13 @@ ul {
         .c-section__article__time {
           font-size: 15px; } }
 
-.c-rss__img {
-  height: 34px; }
+.c-rss {
+  display: none; }
+  @media screen and (min-width: 768px) {
+    .c-rss {
+      display: block; }
+      .c-rss__img {
+        height: 34px; } }
 
 /* --------------------------------------------------
   display
@@ -5959,13 +5950,26 @@ ul {
       background: lightgray;
       color: red; }
     .home .p-popular__rank {
-      width: 80px;
-      height: 80px;
+      width: 60px;
+      height: 60px;
       margin: 0 auto; }
     .home .p-popular__article__wrapper {
       display: -webkit-box;
       display: -ms-flexbox;
       display: flex; }
+    .home .p-popular__item__thumb {
+      width: 100px; }
+    .home .p-popular__article__category {
+      font-size: 13px; }
+    .home .p-popular__article__title {
+      margin: 5px 0;
+      line-height: 1.2; }
+      .home .p-popular__article__title a {
+        font-size: 16px; }
+    .home .p-popular__article__link {
+      font-size: 13px; }
+    .home .p-popular__article__time {
+      font-size: 13px; }
   .home .p-tweet {
     opacity: 1; }
     .home .p-tweet.-move {
@@ -6054,20 +6058,30 @@ ul {
   @media screen and (min-width: 768px) {
     .home .p-flexWrap {
       width: 32%; } }
+  .home .p-pagenation {
+    width: 25%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+    justify-content: space-around;
+    margin: auto;
+    border-radius: 4px;
+    padding: 4px; }
 
 @media screen and (min-width: 768px) {
   .post .p-post {
     width: 65%; } }
 
 .post .p-post__title__wrapper {
-  background-color: lightgray; }
+  background-color: #F7DD84; }
 
 .post .p-post__title {
   width: 100%; }
 
 .post .p-post__contents {
   padding: 10px;
-  background-color: #f5f5f5;
+  background-color: #fff;
   /* wordpressのGutenbergエディタに対応 */ }
   .post .p-post__contents figure {
     text-align: center; }
@@ -6102,6 +6116,19 @@ ul {
 
 .post .p-post__data {
   text-align: center; }
+
+.post .p-post__sideContents {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 45px; }
+  .post .p-post__sideContents__inner {
+    margin: 0 25px; }
+    .post .p-post__sideContents__inner img {
+      margin-bottom: 5px; }
 
 .comments {
   padding: 10px;

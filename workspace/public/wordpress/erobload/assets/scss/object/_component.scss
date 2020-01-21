@@ -32,9 +32,7 @@
   align-self: flex-start;
 
   &__inner {
-    @media screen and (min-width: 768px) {
-      height: 100%;
-    }
+
   }
 
   &__title__wrapper {
@@ -65,7 +63,7 @@
   &__list {
     margin: 0 0.5px 0.5px 0;
     padding: 10px;
-    background: #f5f5f5;
+    background: #fff;
 
     @media screen and (min-width: 768px) {
       //height: 83.5%;
@@ -105,28 +103,13 @@
       font-weight: bold;
       white-space: pre;
 
-      &.-game {
-        background-color: lightskyblue;
-        box-shadow: 2px 2px 2px darkgrey;
-      }
-
-      &.-doujin {
-        background-color: palevioletred;
-        box-shadow: 2px 2px 2px lightcoral;
-      }
-
-      &.-news {
-        background-color: darkmagenta;
-        box-shadow: 2px 2px 2px lightcoral;
-      }
-
       @media screen and (min-width: 768px) {
         font-size: 16px;
       }
     }
 
     &__title {
-      display: inline;
+      display: block;
       margin: 0;
 
       a {
@@ -177,7 +160,12 @@
 }
 
 .c-rss {
-  &__img {
-    height: 34px;
+  display: none;
+
+  @media screen and (min-width: 768px) {
+    display: block;
+    &__img {
+      height: 34px;
+    }
   }
 }

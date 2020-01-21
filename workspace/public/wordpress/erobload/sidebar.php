@@ -33,7 +33,6 @@
                                         <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
                                     </h3>
                                 </div>
-                                <p class="p-popular__article__text c-section__article__text"><?php echo get_the_excerpt(); ?></p>
                                 <a class="p-popular__article__link c-section__article__link"
                                     href="<?php the_permalink(); ?>">詳細を見る</a>
                                 <time class="p-popular__article__time c-section__article__time"><?php the_time('Y年m月d日'); ?></time>
@@ -110,13 +109,13 @@
                         $categories = get_categories('parent=0');
                         
                         //取得したカテゴリへの各種処理
-                        foreach ($categories as $val) {
+                        foreach ($categories as $category) {
 
                             //カテゴリのリンクURLを取得
-                            $cat_link = get_category_link($val->cat_ID);
+                            $cat_link = get_category_link($category->cat_ID);
 
                             //親カテゴリのリスト出力
-                            echo '<li class="p-category__item"><a class="p-category__link" href="' . $cat_link . '">' . $val->name . '(' . $val->count . ')</a></li>';
+                            echo '<li class="p-category__item"><a class="p-category__link" href="' . $cat_link . '">' . $category->name . '(' . $category->count . ')</a></li>';
                         }
                     ?>
                 </ul>

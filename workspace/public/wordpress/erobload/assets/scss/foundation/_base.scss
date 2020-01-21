@@ -1,5 +1,5 @@
 body {
-  font-family: -apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3",
+  font-family: "游ゴシック体","Yu Gothic",-apple-system, BlinkMacSystemFont, "Helvetica Neue", YuGothic, "ヒラギノ角ゴ ProN W3",
     Hiragino Kaku Gothic ProN, Arial, "メイリオ", Meiryo, sans-serif;
   line-height: 1.8;
   min-width: 1150px;
@@ -61,6 +61,10 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+p {
+  font-size: 17px;
 }
 
 .sp {

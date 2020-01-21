@@ -5,7 +5,7 @@
     }
 
     &__title__wrapper {
-      background-color: lightgray;
+      background-color: #F7DD84;
     }
 
     &__title {
@@ -14,7 +14,7 @@
 
     &__contents {
       padding: 10px;
-      background-color: #f5f5f5;
+      background-color: #fff;
 
       /* wordpressのGutenbergエディタに対応 */
       figure {
@@ -68,6 +68,19 @@
 
     &__data {
       text-align: center;
+    }
+  }
+
+  .p-post__sideContents {
+    display: flex;
+    justify-content: center;
+    margin-top: 45px;
+    &__inner {
+      margin: 0 25px;
+
+      img {
+        margin-bottom: 5px;
+      }
     }
   }
 }

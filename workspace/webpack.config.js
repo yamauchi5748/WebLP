@@ -3,6 +3,8 @@ const glob = require("glob");
 
 const entries = glob.sync("./src_client/**/*.js");
 
+const VueLoaderPlugin = require("vue-loader/lib/plugin");
+
 module.exports = {
     mode: 'development',
     entry: {
@@ -11,6 +13,15 @@ module.exports = {
     output: {
         path: path.join(__dirname, 'public/assets/js'),
         filename: `[name].js`,
+    },
+    plugins: [
+        new VueLoaderPlugin()
+    ],
+    resolve: {
+        extensions: [".vue", ".js"],
+        alias: {
+            "vue$": "vue/dist/vue.esm.js"
+        }
     },
     module: {
         rules: [
@@ -38,6 +49,10 @@ module.exports = {
                         ]
                     ]
                 }
+            },
+            {
+                test: /\.vue$/,
+                loader: "vue-loader",
             }
         ]
     },

@@ -11,7 +11,8 @@
         "file-stream-rotator": "^0.5.5",
         "morgan": "^1.9.1",
         "socket.io": "^2.3.0",
-        "socket.io-client": "^2.3.0"
+        "socket.io-client": "^2.3.0",
+        "vue": "^2.6.11"
     },
     "devDependencies": {
         "@babel/core": "^7.7.4",
@@ -22,6 +23,8 @@
         "eslint-loader": "^3.0.3",
         "glob": "^7.1.6",
         "nodemon": "^2.0.1",
+        "vue-loader": "^15.8.3",
+        "vue-template-compiler": "^2.6.11",
         "webpack": "^4.41.2",
         "webpack-cli": "^3.3.10"
     },
